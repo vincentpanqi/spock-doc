@@ -6,6 +6,6 @@ taxonomy:
 
 ### 第一章
 
-# Spock 文档站使用说明
+# Spock 文档站
 
 如何编写 README 文档
