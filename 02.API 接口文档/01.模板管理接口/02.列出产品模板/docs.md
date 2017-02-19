@@ -4,11 +4,11 @@ taxonomy:
     category: docs
 ---
 
-## 列出产品模板
+## 列出产品模板接口
  
 * **URL:**
 
-`/api/templates/products`
+    `/api/templates/products`
 
 * **Method:**
 
@@ -31,52 +31,50 @@ taxonomy:
 	```
 	[
 		{
-			"product_name": "kodo",
+			"product_name": "stack-single",
 			"enabled": true,
-			"internal": false,
-			"product_tmpl_deps": [
+			"stack_deps": [
+			[
 				{
-					"product_name": "mongo-cluster",
-					"services": [
-						{
-							"service_name": "mongo-1",
-							"mount_paths": [],
-							"ports": [],
-							"config_paths": []
-						}
-					]
-				}
-			],
-			"services": [
-				{
-					"service_name": "pfdstg",
-					"default_unit_type": "1U1G",
-					"ports": [
-						21030,
-						21035
-					],
-					"config_paths": [
-						"/pfdstg/qboxpfdstg.conf"
-					],
+				"stack_name": "stack-1",
+				"internal": false,
+				"services": [
+					{
+					"service_name": "service-1",
+					"image": {
+						"name": "service-1",
+						"tag": "test"
+					},
+					"unit_type": "1U1G",
+					"envs": ["a=b"],
+					"command": ["ls"],
+					"config_paths": ["/disk1"],
 					"volume_args": [
 						{
-							mount_path: "/disk1/pfddisk",
-							unit_type: "SSD1_10G"
-						},
-						{
-							mount_path: "/disk2/pfddisk",
-							unit_type: "SSD1_10G"
-						},
-						{
-							mount_path: "/disk3/pfddisk",
-							unit_type: "SSD1_10G"
+						"unit_type": "SSD1_10G",
+						"mount_path": "/disk1"
 						}
 					],
-					"default_image": {
-						"name": "pfdstg",
-						"tag": "test"
+					"access_point": {
+						"type": "domain",
+						"proto": "http",
+						"ap_ports": [8080],
+						"backend_ports": [25000]
+					},
+					"test": {
+						"command": "",
+						"result_path": ""
 					}
+					}
+				],
+				"init_scripts": [
+					{
+					"service_name": "service-1",
+					"commands": []
+					}
+				]
 				}
+			]
 			]
 		}
 	]
