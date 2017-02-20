@@ -1,10 +1,8 @@
 ---
-title: 更新服务模板模板
+title: 更新服务模板
 taxonomy:
     category: docs
 ---
-
-## 更新服务模板模板接口
 
 - 需要管理员权限
 

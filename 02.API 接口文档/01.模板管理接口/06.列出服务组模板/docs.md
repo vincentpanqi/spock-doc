@@ -3,8 +3,6 @@ title: 列出服务组模板
 taxonomy:
     category: docs
 ---
-
-## 列出服务组模板接口
  
 * **URL:**
 
