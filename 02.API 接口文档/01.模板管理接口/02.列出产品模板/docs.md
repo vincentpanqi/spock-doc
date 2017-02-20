@@ -4,8 +4,6 @@ taxonomy:
     category: docs
 ---
 
-## 列出产品模板接口
- 
 * **URL:**
 
     `/api/templates/products`

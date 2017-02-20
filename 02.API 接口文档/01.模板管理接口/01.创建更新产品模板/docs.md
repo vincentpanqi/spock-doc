@@ -1,10 +1,8 @@
 ---
-title: 创建产品模板
+title: 创建更新产品模板
 taxonomy:
     category: docs
 ---
-
-## 创建/更新产品模板
 
 - 需要管理员权限
 - 产品模板依赖次序在`stack_deps`里描述
