@@ -1,16 +1,18 @@
 ---
-title: 删除团队
+title: 创建更新团队
 taxonomy:
     category: docs
 ---
 
+- 需要管理员权限
+
 * **URL:**
 
-    `/api/teams/:name`
+    `/api/users/ldap/sync`
 
 * **Method:**
 
-    `DELETE`
+    `GET`
 
 * **URL Params:**
 
@@ -26,6 +28,6 @@ taxonomy:
 
 * **Error Response:**
 
-	**Code:** `617`
+	**Code:** `603`
   	
-  	**Content:** `{ "message" : "Get Team Error", "code": "617"}`
+  	**Content:** `{ "message" : "Sync LDAP error", "code": "603"}`

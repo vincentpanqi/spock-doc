@@ -1,16 +1,16 @@
 ---
-title: 删除团队
+title: 登出
 taxonomy:
     category: docs
 ---
 
 * **URL:**
 
-    `/api/teams/:name`
+    `/api/user/signout`
 
 * **Method:**
 
-    `DELETE`
+    `GET`
 
 * **URL Params:**
 
@@ -18,7 +18,7 @@ taxonomy:
 
 * **Data Params:**
 
-    `None`
+	`None`
 
 * **Success Response:**
 
@@ -26,6 +26,6 @@ taxonomy:
 
 * **Error Response:**
 
-	**Code:** `617`
+	**Code:** `500`
   	
-  	**Content:** `{ "message" : "Get Team Error", "code": "617"}`
+  	**Content:** `{ "message" : "InvaInternal Error", "code": "500"}`
