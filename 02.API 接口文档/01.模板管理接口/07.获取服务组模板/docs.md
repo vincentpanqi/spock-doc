@@ -78,3 +78,8 @@ taxonomy:
 	**Code:** `612`
   	
   	**Content:** `{ "message" : "Get Template Error", "code": "612", "description": "error details"}`
+
+>>> 注意点 
+- 模版分成两类部署服务模版和测试模版 
+- 部署服务模版中不需要包含 test 字段
+- 测试模版中不需要包含 command 字段
