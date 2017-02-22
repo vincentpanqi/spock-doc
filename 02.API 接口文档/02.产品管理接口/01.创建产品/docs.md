@@ -3,11 +3,6 @@ title: 创建产品接口
 taxonomy:
     category: docs
 ---
-<<<<<<< HEAD
-=======
-
-## 创建/更新产品模板
->>>>>>> 22e15881725e6079cd42504ea3ac287b5076f6e0
  
 - 产品依赖次序在`stack_deps`里描述
 
@@ -136,7 +131,7 @@ taxonomy:
   	**Content:** `{ "message" : "Invalid ProductArgs", "code": "400"}`
 	
 	**Content:** `{ "message" : "Invalid ProductName or StackDeps", "code": "400"}`
-	
+
 	**Code:** `622`
   	
   	**Content:** `{ "message" : "Create Product Error", "code": "622"}`
