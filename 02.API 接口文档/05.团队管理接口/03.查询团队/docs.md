@@ -1,5 +1,5 @@
 ---
-title: 查找团队
+title: 查询团队
 taxonomy:
     category: docs
 ---
@@ -40,4 +40,4 @@ taxonomy:
 
 	**Code:** `614`
   	
-  	**Content:** `{ "message" : "Get Team Error", "code": "614"}`
+  	**Content:** `{ "message" : "Get Team Error", "code": "614", "description": "error details"}`

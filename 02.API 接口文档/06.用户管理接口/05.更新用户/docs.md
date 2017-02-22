@@ -56,4 +56,4 @@ taxonomy:
 
 	**Code:** `601`
   	
-  	**Content:** `{ "message" : "Update user error", "code": "601"}`
+  	**Content:** `{ "message" : "Update user error", "code": "601", "description": "error details"}`

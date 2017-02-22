@@ -40,8 +40,8 @@ taxonomy:
 
 	**Code:** `400`
   	
-  	**Content:** `{ "message" : "Invalid Team Args", "code": "400"}`
+  	**Content:** `{ "message" : "Invalid Team Args", "code": "400", "description": "error details"}`
 
 	**Code:** `616`
   	
-  	**Content:** `{ "message" : "Upsert Team Error", "code": "616"}`
+  	**Content:** `{ "message" : "Upsert Team Error", "code": "616", "description": "error details"}`

@@ -71,4 +71,4 @@ taxonomy:
 
 	**Code:** `612`
   	
-  	**Content:** `{ "message" : "Get Template Error", "code": "612"}`
+  	**Content:** `{ "message" : "Get Template Error", "code": "612", "description": "error details"}`

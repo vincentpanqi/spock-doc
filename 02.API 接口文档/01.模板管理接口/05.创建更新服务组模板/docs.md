@@ -71,8 +71,8 @@ taxonomy:
 
 	**Code:** `400`
   	
-  	**Content:** `{ "message" : "Invalid StackTemplateArgs", "code": "400"}`
+  	**Content:** `{ "message" : "Invalid StackTemplateArgs", "code": "400", "description": "error details"}`
 
 	**Code:** `610`
   	
-  	**Content:** `{ "message" : "Upsert Template Error", "code": "610"}`
+  	**Content:** `{ "message" : "Upsert Template Error", "code": "610", "description": "error details"}`
