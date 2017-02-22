@@ -1,5 +1,5 @@
 ---
-title: 删除产品模板
+title: 创建更新团队
 taxonomy:
     category: docs
 ---
@@ -8,11 +8,11 @@ taxonomy:
 
 * **URL:**
 
-    `/api/templates/products/:productName`
+    `/api/users/ldap/sync`
 
 * **Method:**
 
-    `DELETE`
+    `GET`
 
 * **URL Params:**
 
@@ -28,6 +28,6 @@ taxonomy:
 
 * **Error Response:**
 
-	**Code:** `613`
+	**Code:** `603`
   	
-  	**Content:** `{ "message" : "Delete Template Error", "code": "613"}`
+  	**Content:** `{ "message" : "Sync LDAP error", "code": "603"}`

@@ -1,14 +1,12 @@
 ---
-title: 删除产品模板
+title: 删除团队
 taxonomy:
     category: docs
 ---
 
-- 需要管理员权限
-
 * **URL:**
 
-    `/api/templates/products/:productName`
+    `/api/teams/:name`
 
 * **Method:**
 
@@ -28,6 +26,6 @@ taxonomy:
 
 * **Error Response:**
 
-	**Code:** `613`
+	**Code:** `617`
   	
-  	**Content:** `{ "message" : "Delete Template Error", "code": "613"}`
+  	**Content:** `{ "message" : "Get Team Error", "code": "617"}`

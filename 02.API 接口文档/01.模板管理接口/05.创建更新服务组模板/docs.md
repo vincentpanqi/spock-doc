@@ -4,9 +4,6 @@ taxonomy:
     category: docs
 ---
 
-
-## 创建/更新服务组模板接口
-
 - 需要管理员权限
 
 * **URL:**

@@ -4,8 +4,6 @@ taxonomy:
     category: docs
 ---
 
-## 获取服务组模板接口
-
 * **URL:**
 
     `/api/templates/stacks/:stackName`

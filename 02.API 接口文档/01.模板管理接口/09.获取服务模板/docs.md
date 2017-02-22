@@ -1,10 +1,8 @@
 ---
-title: 获取服务模板模板
+title: 获取服务模板
 taxonomy:
     category: docs
 ---
-
-## 获取服务模板模板接口
 
 * **URL:**
 
