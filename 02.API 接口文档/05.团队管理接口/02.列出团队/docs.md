@@ -42,4 +42,4 @@ taxonomy:
 
 	**Code:** `615`
   	
-  	**Content:** `{ "message" : "List Team Error", "code": "615"}`
+  	**Content:** `{ "message" : "List Team Error", "code": "615", "description": "error details"}`

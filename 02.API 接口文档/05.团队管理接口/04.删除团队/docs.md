@@ -28,4 +28,4 @@ taxonomy:
 
 	**Code:** `617`
   	
-  	**Content:** `{ "message" : "Get Team Error", "code": "617"}`
+  	**Content:** `{ "message" : "Get Team Error", "code": "617", "description": "error details"}`

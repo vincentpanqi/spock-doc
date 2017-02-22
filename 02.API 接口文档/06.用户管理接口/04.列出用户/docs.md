@@ -60,4 +60,4 @@ taxonomy:
 
     **Code:** `602`
   	
-  	**Content:** `{ "message" : "List users error", "code": "602"}`
+  	**Content:** `{ "message" : "List users error", "code": "602", "description": "error details"}`

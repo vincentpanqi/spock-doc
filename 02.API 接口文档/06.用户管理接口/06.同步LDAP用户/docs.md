@@ -1,5 +1,5 @@
 ---
-title: 创建更新团队
+title: 同步LDAP用户
 taxonomy:
     category: docs
 ---
@@ -30,4 +30,4 @@ taxonomy:
 
 	**Code:** `603`
   	
-  	**Content:** `{ "message" : "Sync LDAP error", "code": "603"}`
+  	**Content:** `{ "message" : "Sync LDAP error", "code": "603", "description": "error details"}`

@@ -70,4 +70,4 @@ taxonomy:
 
 	**Code:** `611`
   	
-  	**Content:** `{ "message" : "List Template Error", "code": "611"}`
+  	**Content:** `{ "message" : "List Template Error", "code": "611", "description": "error details"}`

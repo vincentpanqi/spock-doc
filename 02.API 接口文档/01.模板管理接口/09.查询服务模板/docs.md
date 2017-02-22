@@ -1,5 +1,5 @@
 ---
-title: 获取服务模板
+title: 查询服务模板
 taxonomy:
     category: docs
 ---
@@ -60,4 +60,4 @@ taxonomy:
 
 	**Code:** `612`
   	
-  	**Content:** `{ "message" : "Get Template Error", "code": "612"}`
+  	**Content:** `{ "message" : "Get Template Error", "code": "612", "description": "error details"}`
