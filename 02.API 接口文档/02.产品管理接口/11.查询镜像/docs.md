@@ -1,5 +1,5 @@
 ---
-title: 查询镜像接口
+title: 查询镜像
 taxonomy:
     category: docs
 ---

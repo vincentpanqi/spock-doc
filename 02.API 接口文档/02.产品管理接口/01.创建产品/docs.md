@@ -1,5 +1,5 @@
 ---
-title: 创建产品接口
+title: 创建产品
 taxonomy:
     category: docs
 ---

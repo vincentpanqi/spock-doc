@@ -1,5 +1,5 @@
 ---
-title: 查看服务接口
+title: 查询服务
 taxonomy:
     category: docs
 ---

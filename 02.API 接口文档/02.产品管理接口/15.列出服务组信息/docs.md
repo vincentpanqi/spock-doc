@@ -1,5 +1,5 @@
 ---
-title: 查询所有服务组信息接口
+title: 列出服务组信息
 taxonomy:
     category: docs
 ---

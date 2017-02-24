@@ -1,5 +1,5 @@
 ---
-title: 重启服务接口
+title: 重启服务
 taxonomy:
     category: docs
 ---

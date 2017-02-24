@@ -57,6 +57,10 @@ taxonomy:
 					"backend_ports": [
 					25000
 					]
+				},
+				"test": {
+					"command": "ls",
+					"result_path": "/disk1"
 				}
 			}
 		]

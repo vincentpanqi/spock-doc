@@ -60,6 +60,10 @@ taxonomy:
 					"image": {
 						"name": "pfdstg",
 						"tag": "test"
+					},
+					"test": {
+						"command": "ls",
+						"result_path": "/disk1"
 					}
 				}
 			]
