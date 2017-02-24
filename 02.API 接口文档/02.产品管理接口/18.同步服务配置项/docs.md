@@ -1,5 +1,5 @@
 ---
-title: 列出服务配置项
+title: 同步服务配置项
 taxonomy:
     category: docs
 ---

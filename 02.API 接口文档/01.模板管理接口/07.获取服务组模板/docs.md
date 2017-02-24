@@ -27,48 +27,59 @@ taxonomy:
 	**Content:** 
 	
 	```
-	[
-		{
-			"product_name": "kodo",
-			"enabled": true,
-			"stack_deps": [
+	{
+		"stack_name": "stack-1",
+		"internal": false,
+		"services": [
+			{
+			"service_name": "service-1",
+			"image": {
+				"name": "service-1",
+				"tag": "test"
+			},
+			"unit_type": "1U1G",
+			"command": [
+				"ls"
+			],
+			"config_paths": [
+				"/disk1"
+			],
+			"volume_args": [
 				{
-					"service_name": "pfdstg",
-					"unit_type": "1U1G",
-					"ports": [
-						21030,
-						21035
-					],
-					"envs": ["a=b"],
-					"config_paths": [
-						"/pfdstg/qboxpfdstg.conf"
-					],
-					"volume_args": [
-						{
-							mount_path: "/disk1/pfddisk",
-							unit_type: "SSD1_10G"
-						},
-						{
-							mount_path: "/disk2/pfddisk",
-							unit_type: "SSD1_10G"
-						},
-						{
-							mount_path: "/disk3/pfddisk",
-							unit_type: "SSD1_10G"
-						}
-					],
-					"image": {
-						"name": "pfdstg",
-						"tag": "test"
-					}
+				"unit_type": "SSD1_10G",
+				"mount_path": "/disk1"
 				}
-			]
-		}
-	]
+			],
+			"access_point": {
+				"type": "domain",
+				"proto": "",
+				"ap_ports": [],
+				"backend_ports": [
+				25000
+				]
+			},
+			"test": {
+				"command": "",
+				"result_path": ""
+			}
+			}
+		],
+		"init_scripts": [
+			{
+			"service_name": "service-1",
+			"commands": []
+			}
+		]
+	}
 	```	
 
 * **Error Response:**
 
 	**Code:** `612`
   	
-  	**Content:** `{ "message" : "Get Template Error", "code": "612"}`
+  	**Content:** `{ "message" : "Get Template Error", "code": "612", "description": "error details"}`
+
+>>> 注意点 
+- 模版分成两类部署服务模版和测试模版 
+- 部署服务模版中不需要包含 test 字段
+- 测试模版中不需要包含 command 字段

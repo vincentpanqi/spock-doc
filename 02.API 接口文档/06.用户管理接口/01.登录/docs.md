@@ -34,12 +34,12 @@ taxonomy:
 
 	**Code:** `400`
   	
-  	**Content:** `{ "message" : "Bad Request", "code": "400"}`
+  	**Content:** `{ "message" : "Bad Request", "code": "400", "description": "error details"}`
 
 	**Code:** `401`
   	
-  	**Content:** `{ "message" : "Unauthorized", "code": "401"}`
+  	**Content:** `{ "message" : "Unauthorized", "code": "401", "description": "error details"}`
 
 	**Code:** `403`
   	
-  	**Content:** `{ "message" : "Forbidden", "code": "403"}`
+  	**Content:** `{ "message" : "Forbidden", "code": "403", "description": "error details"}`

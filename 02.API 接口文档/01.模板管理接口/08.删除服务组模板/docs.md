@@ -8,7 +8,7 @@ taxonomy:
 
 * **URL:**
 
-    `/api/templates/stacks/:stackName`
+    `/api/templates/stacks`
 
 * **Method:**
 
@@ -20,7 +20,15 @@ taxonomy:
 
 * **Data Params:**
 
-    `None`
+    **Type:** `application/json`
+	
+	**Content:**
+
+    ```
+	{
+		"stack_names": ["stack-2", "stack-3"]
+	}
+	```	
 
 * **Success Response:**
 
@@ -30,4 +38,4 @@ taxonomy:
 
 	**Code:** `613`
   	
-  	**Content:** `{ "message" : "Delete Template Error", "code": "613"}`
+  	**Content:** `{ "message" : "Delete Template Error", "code": "613", "description": "error details"}`

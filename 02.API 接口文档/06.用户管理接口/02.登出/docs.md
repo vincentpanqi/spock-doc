@@ -28,4 +28,4 @@ taxonomy:
 
 	**Code:** `500`
   	
-  	**Content:** `{ "message" : "InvaInternal Error", "code": "500"}`
+  	**Content:** `{ "message" : "InvaInternal Error", "code": "500", "description": "error details"}`

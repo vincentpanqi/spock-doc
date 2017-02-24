@@ -60,6 +60,10 @@ taxonomy:
 					"image": {
 						"name": "pfdstg",
 						"tag": "test"
+					},
+					"test": {
+						"command": "ls",
+						"result_path": "/disk1"
 					}
 				}
 			]
@@ -70,4 +74,4 @@ taxonomy:
 
 	**Code:** `611`
   	
-  	**Content:** `{ "message" : "List Template Error", "code": "611"}`
+  	**Content:** `{ "message" : "List Template Error", "code": "611", "description": "error details"}`
