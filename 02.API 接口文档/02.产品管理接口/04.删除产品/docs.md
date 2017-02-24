@@ -1,20 +1,20 @@
 ---
-title: 重启服务组接口
+title: 删除产品
 taxonomy:
     category: docs
 ---
 
 * **URL:**
 
-    `/stacks/:stackName/restart`
+    `/api/products/:productName`
 
 * **Method:**
 
-    `POST`
+    `DELETE`
 
 * **URL Params:**
 
-    `None`
+	`None`
 
 * **Data Params:**
 
@@ -28,4 +28,4 @@ taxonomy:
 
 	**Code:** `624`
   	
-  	**Content:** `{ "message" : "Restart Stack Error", "code": "624"}`
+  	**Content:** `{ "message" : "Delete Product Error", "code": "624"}`

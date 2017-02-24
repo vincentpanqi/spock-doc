@@ -1,5 +1,5 @@
 ---
-title: 创建产品接口
+title: 创建产品
 taxonomy:
     category: docs
 ---
@@ -132,6 +132,6 @@ taxonomy:
 	
 	**Content:** `{ "message" : "Invalid ProductName or StackDeps", "code": "400"}`
 
-	**Code:** `622`
+	**Code:** `623`
   	
-  	**Content:** `{ "message" : "Create Product Error", "code": "622"}`
+  	**Content:** `{ "message" : "Create Product Error", "code": "623"}`

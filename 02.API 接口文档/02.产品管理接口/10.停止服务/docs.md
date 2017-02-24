@@ -1,5 +1,5 @@
 ---
-title: 停止服务接口
+title: 停止服务
 taxonomy:
     category: docs
 ---

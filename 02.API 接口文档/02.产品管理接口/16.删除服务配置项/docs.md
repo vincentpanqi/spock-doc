@@ -1,12 +1,12 @@
 ---
-title: 删除服务组接口
+title: 删除服务配置项
 taxonomy:
     category: docs
 ---
 
 * **URL:**
 
-    `/api/stacks/:stackName`
+    `/configs`
 
 * **Method:**
 
@@ -22,10 +22,10 @@ taxonomy:
 
 * **Success Response:**
 
-	**Code:** `200`
+    **Code:** `200`
 
 * **Error Response:**
 
-	**Code:** `623`
+    **Code:** `644`
   	
-  	**Content:** `{ "message" : "Delete Stack Error", "code": "623"}`
+  	**Content:** `{ "message" : "Delete Config Service Specs Error", "code": "644"}`

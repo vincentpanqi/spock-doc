@@ -1,12 +1,12 @@
 ---
-title: 启动服务接口
+title: 重启服务
 taxonomy:
     category: docs
 ---
 
 * **URL:**
 
-    `/stacks/:stackName/services/:serviceName/start`
+    `/stacks/:stackName/services/:serviceName/restart`
 
 * **Method:**
 
@@ -26,6 +26,6 @@ taxonomy:
 
 * **Error Response:**
 
-	**Code:** `634`
+	**Code:** `632`
   	
-  	**Content:** `{ "message" : "Start Service Error", "code": "634"}`
+  	**Content:** `{ "message" : "Restart Service Error", "code": "632"}`

@@ -1,5 +1,5 @@
 ---
-title: 更新服务接口
+title: 更新服务
 taxonomy:
     category: docs
 ---

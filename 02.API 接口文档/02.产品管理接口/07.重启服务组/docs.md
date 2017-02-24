@@ -1,12 +1,12 @@
 ---
-title: 重启服务接口
+title: 重启服务组
 taxonomy:
     category: docs
 ---
 
 * **URL:**
 
-    `/stacks/:stackName/services/:serviceName/restart`
+    `/stacks/:stackName/restart`
 
 * **Method:**
 
@@ -26,6 +26,6 @@ taxonomy:
 
 * **Error Response:**
 
-	**Code:** `632`
+	**Code:** `624`
   	
-  	**Content:** `{ "message" : "Restart Service Error", "code": "632"}`
+  	**Content:** `{ "message" : "Restart Stack Error", "code": "624"}`
