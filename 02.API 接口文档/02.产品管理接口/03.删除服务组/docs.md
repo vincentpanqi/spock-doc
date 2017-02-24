@@ -1,5 +1,5 @@
 ---
-title: 删除服务组接口
+title: 删除服务组
 taxonomy:
     category: docs
 ---

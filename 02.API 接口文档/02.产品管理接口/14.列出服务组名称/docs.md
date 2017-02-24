@@ -1,5 +1,5 @@
 ---
-title: 查询已经创建的服务组名称接口
+title: 列出服务组名称
 taxonomy:
     category: docs
 ---
