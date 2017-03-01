@@ -39,7 +39,7 @@ taxonomy:
 						21030,
 						21035
 					],
-					"envs": ["a=b"],
+					"envs": [{"key":"value"},{"key":"value"}],
 					"config_paths": [
 						"/pfdstg/qboxpfdstg.conf"
 					],

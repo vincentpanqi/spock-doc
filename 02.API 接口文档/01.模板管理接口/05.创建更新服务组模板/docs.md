@@ -39,7 +39,7 @@ taxonomy:
 				"service_name": "service-2",
 				"unit_type": "1U1G",
 				"ports": [32111],
-				"env": ["a=b"],
+				"env": [{"key":"value"},{"key":"value"}],
 				"command": ["ls"],
 				"config_paths": ["/disk1"],
 				"volume_args": [

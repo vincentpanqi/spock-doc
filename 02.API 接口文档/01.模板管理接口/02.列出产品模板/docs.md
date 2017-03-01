@@ -44,7 +44,7 @@ taxonomy:
 						"tag": "test"
 					},
 					"unit_type": "1U1G",
-					"envs": ["a=b"],
+					"envs": [{"key":"value"},{"key","value"}],
 					"command": ["ls"],
 					"config_paths": ["/disk1"],
 					"volume_args": [
