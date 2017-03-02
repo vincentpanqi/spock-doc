@@ -67,7 +67,7 @@ taxonomy:
 		"init_scripts": [
 			{
 			"service_name": "service-1",
-			"commands": []
+			"command": "echo"
 			}
 		]
 	}

@@ -57,16 +57,6 @@ taxonomy:
 								}
 							]
 						}
-					],
-					"init_scripts": [
-						{
-							"service_name": "mysql-1",
-							"command": [
-								"mysql",
-								"-e",
-								"CREATE DATABASE testing; use testing; CREATE TABLE test(name varchar(32)); INSERT INTO test VALUES('hello')"
-							]
-						}
 					]
 				}
 			],
