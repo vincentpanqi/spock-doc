@@ -24,8 +24,8 @@ taxonomy:
 
 	**Code:** `200`
 
-	**Content:** 
-	
+	**Content:**
+
 	```
     {
         "service_name": "service-1",
@@ -43,12 +43,12 @@ taxonomy:
             "mount_path": "/disk1"
             }
         ],
-        "access_point": {
-            "type": "domain",
-            "proto": "http",
-            "ap_ports": [25000],
-            "backend_ports": [25000]
-        },
+        "access_points": [{
+          "type": "domain",
+          "proto": "http",
+          "ap_port": 25000,
+          "backend_port": 25000
+        }],
         "test": {
             "command": "",
             "result_path": ""
@@ -59,5 +59,5 @@ taxonomy:
 * **Error Response:**
 
 	**Code:** `612`
-  	
+
   	**Content:** `{ "message" : "Get Template Error", "code": "612", "description": "error details"}`

@@ -24,8 +24,8 @@ taxonomy:
 
 	**Code:** `200`
 
-	**Content:** 
-	
+	**Content:**
+
 	```
 	{
 		"stack_name": "stack-1",
@@ -50,14 +50,12 @@ taxonomy:
 				"mount_path": "/disk1"
 				}
 			],
-			"access_point": {
-				"type": "domain",
-				"proto": "",
-				"ap_ports": [],
-				"backend_ports": [
-				25000
-				]
-			},
+      "access_points": [{
+        "type": "domain",
+        "proto": "http",
+        "ap_port": 25000,
+        "backend_port": 25000
+      }],
 			"test": {
 				"command": "",
 				"result_path": ""
@@ -71,15 +69,15 @@ taxonomy:
 			}
 		]
 	}
-	```	
+	```
 
 * **Error Response:**
 
 	**Code:** `612`
-  	
+
   	**Content:** `{ "message" : "Get Template Error", "code": "612", "description": "error details"}`
 
->>> 注意点 
-- 模版分成两类部署服务模版和测试模版 
+>>> 注意点
+- 模版分成两类部署服务模版和测试模版
 - 部署服务模版中不需要包含 test 字段
 - 测试模版中不需要包含 command 字段

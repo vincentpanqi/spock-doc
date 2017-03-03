@@ -24,8 +24,8 @@ taxonomy:
 
 	**Code:** `200`
 
-	**Content:** 
-	
+	**Content:**
+
 	```
 	[
 		{
@@ -53,12 +53,12 @@ taxonomy:
 						"mount_path": "/disk1"
 						}
 					],
-					"access_point": {
-						"type": "domain",
-						"proto": "http",
-						"ap_ports": [8080],
-						"backend_ports": [25000]
-					},
+          "access_points": [{
+            "type": "domain",
+            "proto": "http",
+            "ap_port": 25000,
+            "backend_port": 25000
+          }],
 					"test": {
 						"command": "",
 						"result_path": ""
@@ -76,9 +76,9 @@ taxonomy:
 			]
 		}
 	]
-	```	
+	```
 * **Error Response:**
 
 	**Code:** `611`
-  	
+
   	**Content:** `{ "message" : "List Template Error", "code": "611", "description": "error details"}`
