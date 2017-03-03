@@ -29,7 +29,7 @@ taxonomy:
 	```
 	[
 		{
-			"product_name": "kodo",
+			"stack_name": "kodo",
 			"enabled": true,
 			"stack_deps": [
 				{

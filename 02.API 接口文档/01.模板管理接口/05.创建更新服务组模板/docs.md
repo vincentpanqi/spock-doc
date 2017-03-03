@@ -31,7 +31,7 @@ taxonomy:
 		"init_scripts": [
 			{
 			"service_name": "service-2",
-			"command": ["ls"]
+			"command": "urlencode"
 			}
 		],
 		"services": [
