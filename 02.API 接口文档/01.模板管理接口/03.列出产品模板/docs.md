@@ -79,6 +79,6 @@ taxonomy:
 	```
 * **Error Response:**
 
-	**Code:** `611`
+	**Code:** `612`
 
-  	**Content:** `{ "message" : "List Template Error", "code": "611", "description": "error details"}`
+  	**Content:** `{ "message" : "List Template Error", "code": "612", "description": "error details"}`

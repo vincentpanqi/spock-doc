@@ -1,5 +1,5 @@
 ---
-title: 创建更新产品模板
+title: 更新产品模板
 taxonomy:
     category: docs
 ---
@@ -10,7 +10,7 @@ taxonomy:
 
 * **URL:**
 
-    `/api/templates/products`
+    `/api/templates/products/:productName`
 
 * **Method:**
 
@@ -44,6 +44,6 @@ taxonomy:
   	
   	**Content:** `{ "message" : "Invalid ProductTemplateArgs", "code": "400", "description": "error details"}`
 
-	**Code:** `610`
+	**Code:** `611`
   	
-  	**Content:** `{ "message" : "Upsert Template Error", "code": "610", "description": "error details"}`
+  	**Content:** `{ "message" : "Update Template Error", "code": "611", "description": "error details"}`

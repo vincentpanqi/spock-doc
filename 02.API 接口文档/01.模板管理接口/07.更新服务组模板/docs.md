@@ -8,7 +8,7 @@ taxonomy:
 
 - **URL:**
 
-  `/api/templates/stacks`
+  `/api/templates/stacks/:stackName`
 
 - **Method:**
 
@@ -79,8 +79,8 @@ taxonomy:
   **Content:** `{ "message" : "Invalid StackTemplateArgs", "code": "400", "description": "error details"}`
   ```
 
-  **Code:** `610`
+  **Code:** `611`
 
   ```
-  **Content:** `{ "message" : "Upsert Template Error", "code": "610", "description": "error details"}`
+  **Content:** `{ "message" : "Upsert Template Error", "code": "611", "description": "error details"}`
   ```

@@ -28,6 +28,6 @@ taxonomy:
 
 * **Error Response:**
 
-	**Code:** `613`
+	**Code:** `614`
   	
-  	**Content:** `{ "message" : "Delete Template Error", "code": "613", "description": "error details"}`
+  	**Content:** `{ "message" : "Delete Template Error", "code": "614", "description": "error details"}`

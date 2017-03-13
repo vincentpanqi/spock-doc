@@ -73,9 +73,9 @@ taxonomy:
 
 * **Error Response:**
 
-	**Code:** `612`
+	**Code:** `613`
 
-  	**Content:** `{ "message" : "Get Template Error", "code": "612", "description": "error details"}`
+  	**Content:** `{ "message" : "Get Template Error", "code": "613", "description": "error details"}`
 
 >>> 注意点
 - 模版分成两类部署服务模版和测试模版

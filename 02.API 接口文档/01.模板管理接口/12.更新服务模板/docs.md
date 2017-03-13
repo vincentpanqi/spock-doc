@@ -55,6 +55,6 @@ taxonomy:
 
 * **Error Response:**
 
-	**Code:** `610`
+	**Code:** `611`
   	
-  	**Content:** `{ "message" : "Upsert Template Error", "code": "610", "description": "error details"}`
+  	**Content:** `{ "message" : "Update Template Error", "code": "611", "description": "error details"}`
