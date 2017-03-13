@@ -6,7 +6,7 @@ taxonomy:
 
 * **URL:**
 
-    `/stacks/:stackName/services/:serviceName`
+    `/api/inspect/stacks/:stackName/services/:serviceName`
 
 * **Method:**
 

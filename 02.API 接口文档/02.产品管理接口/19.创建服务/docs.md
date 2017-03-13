@@ -6,7 +6,7 @@ taxonomy:
 
 * **URL:**
 
-    `/stacks/:stackName/services`
+    `/api/stacks/:stackName/services`
 
 * **Method:**
 
@@ -27,10 +27,12 @@ taxonomy:
 		"init_scripts": ["dora_pre_test.sh"],
 		"service": {
 			"service_name": "doratest",
-			"access_point": {
+			"access_points": [{
 				"type": "domain",
-				"backend_ports": [25001]
-			},
+				"proto": "http",
+				"ap_port": 25000,
+				"backend_port": 25000
+			}],
 			"volume_args": [
 				{
 					"mount_path": "/qbox",

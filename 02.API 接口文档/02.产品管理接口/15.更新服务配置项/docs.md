@@ -6,7 +6,7 @@ taxonomy:
 
 * **URL:**
 
-    `/configs`
+    `/api/configs`
 
 * **Method:**
 

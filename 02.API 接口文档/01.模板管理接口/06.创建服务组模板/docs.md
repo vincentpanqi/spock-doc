@@ -38,8 +38,7 @@ taxonomy:
             {
                 "service_name": "service-2",
                 "unit_type": "1U1G",
-                "ports": [32111],
-                "env": [{"key":"value"},{"key":"value"}],
+                "envs": [{"key":"value"},{"key":"value"}],
                 "command": ["ls"],
                 "config_paths": ["/disk1"],
                 "volume_args": [
@@ -52,7 +51,7 @@ taxonomy:
                     "name": "service-1",
                     "tag": "test"
                 },
-                "access_point":  [{
+                "access_points": [{
                   "type": "domain",
                   "proto": "http",
                   "ap_port": 25000,

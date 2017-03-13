@@ -53,12 +53,12 @@ taxonomy:
 						"mount_path": "/disk1"
 						}
 					],
-          "access_points": [{
-            "type": "domain",
-            "proto": "http",
-            "ap_port": 25000,
-            "backend_port": 25000
-          }],
+					"access_points": [{
+						"type": "domain",
+						"proto": "http",
+						"ap_port": 25000,
+						"backend_port": 25000
+					}],
 					"test": {
 						"command": "",
 						"result_path": ""

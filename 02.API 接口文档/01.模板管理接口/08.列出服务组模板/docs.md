@@ -30,16 +30,19 @@ taxonomy:
 	[
 		{
 			"stack_name": "kodo",
-			"enabled": true,
+			"internal": false,
+			"init_scripts": [
+				{
+					"service_name": "service-1",
+					"command": "echo"
+				}
+			],
 			"stack_deps": [
 				{
 					"service_name": "pfdstg",
 					"unit_type": "1U1G",
-					"ports": [
-						21030,
-						21035
-					],
 					"envs": [{"key":"value"},{"key":"value"}],
+					"command": ["ls"],
 					"config_paths": [
 						"/pfdstg/qboxpfdstg.conf"
 					],
@@ -61,6 +64,12 @@ taxonomy:
 						"name": "pfdstg",
 						"tag": "test"
 					},
+					"access_points": [{
+						"type": "domain",
+						"proto": "http",
+						"ap_port": 25000,
+						"backend_port": 25000
+					}],
 					"test": {
 						"command": "ls",
 						"result_path": "/disk1"

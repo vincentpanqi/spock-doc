@@ -6,7 +6,7 @@ taxonomy:
 
 * **URL:**
 
-    `/images/services/:serviceName`
+    `/api/images/services/:serviceName`
 
 * **Method:**
 

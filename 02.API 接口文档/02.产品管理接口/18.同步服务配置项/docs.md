@@ -6,7 +6,7 @@ taxonomy:
 
 * **URL:**
 
-    `/configs/sync`
+    `/api/configs/sync`
 
 * **Method:**
 

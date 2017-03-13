@@ -23,11 +23,12 @@ taxonomy:
     ```
     {
         "service_name": "service-2",
+        "image": {
+            "name": "service-1",
+            "tag": "test"
+        },
         "unit_type": "1U1G",
-        "ports": [
-            32111
-        ],
-        "env": ["a=b"],
+        "envs": [{"key":"value"},{"key":"value"}],
         "command": ["ls"],
         "config_paths": ["/disk1"],
         "volume_args": [
@@ -36,15 +37,15 @@ taxonomy:
             "unit_type": "SSD1_10G"
             }
         ],
-        "image": {
-            "name": "service-1",
-            "tag": "test"
-        },
-        "access_point": {
+        "access_points": [{
             "type": "domain",
             "proto": "http",
-            "ap_ports": [25000],
-            "backend_ports": [25000]
+            "ap_port": 25000,
+            "backend_port": 25000
+        }],
+        "test": {
+            "command": "ls",
+            "result_path": "/disk1"
         }
     }
     ```
