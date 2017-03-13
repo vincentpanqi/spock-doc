@@ -6,7 +6,7 @@ taxonomy:
 
 * **URL:**
 
-    `/stacks/:stackName/services/:serviceName/stop`
+    `/api/stacks/:stackName/services/:serviceName/stop`
 
 * **Method:**
 

@@ -6,7 +6,7 @@ taxonomy:
 
 * **URL:**
 
-    `/stacks/:stackName/services/:serviceName/restart`
+    `/api/stacks/:stackName/services/:serviceName/restart`
 
 * **Method:**
 
