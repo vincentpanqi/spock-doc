@@ -51,7 +51,7 @@ taxonomy:
                     "name": "service-1",
                     "tag": "test"
                 },
-                "access_point": [{
+                "access_points": [{
                   "type": "domain",
                   "proto": "http",
                   "ap_port": 25000,

@@ -1,33 +1,38 @@
 ---
-title: 创建更新Pipeline
+title: 查询Pipeline
 taxonomy:
     category: docs
 ---
 
 * **URL:**
 
-    `/api/pipelines`
+    `/api/pipelines/:pipelineName`
 
 * **Method:**
 
-    `POST`
+    `GET`
 
 * **URL Params:**
 
-    `None`
+	`None`
 
 * **Data Params:**
 
-	**Type:** `application/json`
-	
-	**Content:**
+    `None`
 
-    ```
+* **Success Response:**
+
+	**Code:** `200`
+
+	**Content:** 
+	
+	```
     {
         "pipeline_name": "pipeline-1",
+        "creator": "yaoshipu",
         "stack_name": "stack-1",
         "servive_name": "service-1",
-        "test_stack": "test",
+        "test_stack": "test1",
         "test_service": "doratest",
         "test_env": "spock",
         "repo_owner": "yaoshipu",
@@ -36,20 +41,13 @@ taxonomy:
         "run_deploy": true,
         "run_test": true,
         "run_distribute": true,
+        "updated": "2017-02-21T18:58:13.355+08:00",
         "enabled": true
     }
 	```	
 
-* **Success Response:**
-
-	**Code:** `200`
-
 * **Error Response:**
 
-	**Code:** `400`
+	**Code:** `682`
   	
-  	**Content:** `{ "message" : "Invalid Pipeline Args", "code": "400", "description": "error details"}`
-
-	**Code:** `680`
-  	
-  	**Content:** `{ "message" : "Upsert Pipeline Error", "code": "680", "description": "error details"}`
+  	**Content:** `{ "message" : "Get Pipeline Error", "code": "682", "description": "error details"}`

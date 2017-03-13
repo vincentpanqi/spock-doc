@@ -37,7 +37,7 @@ taxonomy:
             "unit_type": "SSD1_10G"
             }
         ],
-        "access_point": [{
+        "access_points": [{
             "type": "domain",
             "proto": "http",
             "ap_port": 25000,

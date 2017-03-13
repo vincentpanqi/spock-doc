@@ -64,7 +64,7 @@ taxonomy:
 						"name": "pfdstg",
 						"tag": "test"
 					},
-					"access_point": [{
+					"access_points": [{
 						"type": "domain",
 						"proto": "http",
 						"ap_port": 25000,
