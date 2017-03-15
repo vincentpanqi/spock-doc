@@ -6,7 +6,7 @@ taxonomy:
 
 * **URL:**
 
-    `/api/pipelines/queue`
+    `/api/pipeline/queue`
 
 * **Method:**
 
