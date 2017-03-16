@@ -6,7 +6,7 @@ taxonomy:
 
 * **URL:**
 
-    `/api/pipeline/tasks/:pipelineName/:taskID/cancel`
+    `/api/tasks/cancel/id/:id/pipeline/:name`
 
 * **Method:**
 

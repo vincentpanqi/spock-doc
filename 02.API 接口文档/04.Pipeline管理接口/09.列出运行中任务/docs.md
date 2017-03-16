@@ -6,7 +6,7 @@ taxonomy:
 
 * **URL:**
 
-    `/api/pipeline/runningtasks`
+    `/api/tasks/running`
 
 * **Method:**
 
