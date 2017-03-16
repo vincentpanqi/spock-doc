@@ -1,12 +1,12 @@
 ---
-title: 取消任务
+title: 取消队列任务
 taxonomy:
     category: docs
 ---
 
 * **URL:**
 
-    `/api/tasks/id/:id/pipeline/:name`
+    `/api/pipeline/queue/:id`
 
 * **Method:**
 
@@ -26,6 +26,6 @@ taxonomy:
 
 * **Error Response:**
 
-	**Code:** `688`
+	**Code:** `689`
   	
-  	**Content:** `{ "message" : "Cancel Task Error", "code": "688", "description": "error details"}`
+  	**Content:** `{ "message" : "Cancel Queue Task Error", "code": "689", "description": "error details"}`
