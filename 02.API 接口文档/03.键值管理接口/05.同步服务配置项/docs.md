@@ -14,7 +14,9 @@ taxonomy:
 
 * **URL Params:**
 
-    `None`
+    **Optional:** 默认不填是false
+
+    `force=<false|true>`
 
 * **Data Params:**
 
