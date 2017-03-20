@@ -1,5 +1,5 @@
 ---
-title: 创建更新服务组模板
+title: 创建服务组模板
 taxonomy:
   category: docs
 ---
