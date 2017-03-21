@@ -26,11 +26,11 @@ taxonomy:
     username=yaoshipu&password=Qiniu%40999
 	```	
 
-* **Success Response:**
+* **返回:**
 
 	**Code:** `200`
 
-* **Error Response:**
+* **错误信息:**
 
 	**Code:** `400`
   	

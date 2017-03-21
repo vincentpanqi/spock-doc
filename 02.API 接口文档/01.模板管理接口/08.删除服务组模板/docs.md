@@ -30,11 +30,11 @@ taxonomy:
 	}
 	```	
 
-* **Success Response:**
+* **返回:**
 
 	**Code:** `200`
 
-* **Error Response:**
+* **错误信息:**
 
 	**Code:** `613`
   	
