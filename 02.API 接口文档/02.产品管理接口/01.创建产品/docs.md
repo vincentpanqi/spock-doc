@@ -1,5 +1,5 @@
 ---
-title: 创建产品接口
+title: 创建产品
 taxonomy:
     category: docs
 ---
@@ -55,16 +55,6 @@ taxonomy:
 									"mount_path": "/var/lib/mysql",
 									"unit_type": "SSD1_10G"
 								}
-							]
-						}
-					],
-					"init_scripts": [
-						{
-							"service_name": "mysql-1",
-							"command": [
-								"mysql",
-								"-e",
-								"CREATE DATABASE testing; use testing; CREATE TABLE test(name varchar(32)); INSERT INTO test VALUES('hello')"
 							]
 						}
 					]
@@ -132,6 +122,6 @@ taxonomy:
 	
 	**Content:** `{ "message" : "Invalid ProductName or StackDeps", "code": "400"}`
 
-	**Code:** `622`
+	**Code:** `623`
   	
-  	**Content:** `{ "message" : "Create Product Error", "code": "622"}`
+  	**Content:** `{ "message" : "Create Product Error", "code": "623"}`
