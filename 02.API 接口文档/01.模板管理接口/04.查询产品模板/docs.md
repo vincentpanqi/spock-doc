@@ -4,21 +4,9 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+* **请求:**
 
-    `/api/templates/products/:productName`
-
-* **Method:**
-
-    `GET`
-
-* **URL Params:**
-
-    `None`
-
-* **Data Params:**
-
-    `None`
+    `GET /api/templates/products/:productName`
 
 * **返回:**
 
@@ -75,6 +63,10 @@ taxonomy:
         ]
     }
     ```
+* **返回参数:**
+
+    详见“列出产品模版”
+
 * **错误信息:**
 
 	**Code:** `613`

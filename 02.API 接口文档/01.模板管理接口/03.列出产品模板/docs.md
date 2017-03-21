@@ -4,21 +4,9 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+* **请求:**
 
-    `/api/templates/products`
-
-* **Method:**
-
-    `GET`
-
-* **URL Params:**
-
-	`None`
-
-* **Data Params:**
-
-    `None`
+    `GET /api/templates/products`
 
 * **返回:**
 
@@ -77,6 +65,16 @@ taxonomy:
 		}
 	]
 	```	
+* **返回参数:**
+
+|  参数       |   描述                     |
+|------------|----------------------------|
+|product_name|产品名称，全局唯一             |
+|enabled     |是否对外启用模版               |
+|stack_deps  |详见"创建服务组模版"参数        |
+|init_scripts|初始化脚本，服务创建成功后执行   |
+
+
 * **错误信息:**
 
 	**Code:** `612`

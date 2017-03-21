@@ -6,21 +6,10 @@ taxonomy:
 
 - 需要管理员权限
 
-* **URL:**
+* **请求:**
 
-    `/api/templates/products/:productName`
+    `DELETE /api/templates/products/:productName`
 
-* **Method:**
-
-    `DELETE`
-
-* **URL Params:**
-
-    `None`
-
-* **Data Params:**
-
-    `None`
 
 * **返回:**
 

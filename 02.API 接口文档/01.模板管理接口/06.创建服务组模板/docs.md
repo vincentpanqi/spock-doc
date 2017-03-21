@@ -6,19 +6,12 @@ taxonomy:
 
 - 需要管理员权限
 
-- **URL:**
+- **请求:**
 
-  `/api/templates/stacks`
+  `POST /api/templates/stacks`
 
-- **Method:**
 
-  `POST`
-
-- **URL Params:**
-
-  `None`
-
-- **Data Params:**
+- **请求参数:**
 
   **Type:** `application/json`
 
@@ -65,12 +58,27 @@ taxonomy:
         ]
     }
   ```
+- **服务组参数:**
+|参数|描述|
+|---|---|
+|stack_name|服务组名称，全局唯一|
+|internal|是否为内部服务，暂无使用场景|
+|init_scripts|初始化脚本，服务创建成功后执行|
+|services|具体服务配置，详细配置说明见下表|
 
-- **Success Response:**
+|参数|描述|
+|---|---|
+|service_name|服务名称，全局唯一|
+|unit_type|服务的规格|
+|init_scripts|初始化脚本，服务创建成功后执行|
+|services|具体服务配置，详细配置说明见下表|
+
+
+- **返回:**
 
   **Code:** `200`
 
-- **Error Response:**
+- **错误信息:**
 
   **Code:** `400`
 

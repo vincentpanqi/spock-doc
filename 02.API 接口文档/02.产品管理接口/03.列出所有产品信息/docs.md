@@ -22,7 +22,7 @@ taxonomy:
 
     `None`
 
-* **Success Response:**
+* **返回:**
 
 	**Code:** `200`
 
@@ -107,7 +107,7 @@ taxonomy:
     ]
     ```
 
-* **Error Response:**
+* **错误信息:**
 
 	**Code:** `622`
   	
