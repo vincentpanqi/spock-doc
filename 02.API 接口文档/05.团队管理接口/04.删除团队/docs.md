@@ -6,7 +6,7 @@ taxonomy:
 
 ### 请求：
 
-   DELETE /api/teams/:name
+    DELETE /api/teams/:name
 
 ### 返回：
 
