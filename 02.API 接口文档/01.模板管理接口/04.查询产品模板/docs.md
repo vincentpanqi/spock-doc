@@ -4,11 +4,11 @@ taxonomy:
     category: docs
 ---
 
-### **请求:**
+### 请求:
 
     GET /api/templates/products/:productName
 
-### **返回:**
+### 返回:
 
 **Code:** `200`
 
@@ -63,11 +63,11 @@ taxonomy:
     ]
 }
 ```
-### **返回参数:**
+### 返回参数:
 
     详见“列出产品模版”
 
-### **错误信息:**
+### 错误信息:
 
 **Code:** `613`
 
