@@ -8,53 +8,41 @@ taxonomy:
 
 ### 请求：
 
-    `/api/users`
-
-* **Method:**
-
-    `GET`
-
-* **URL Params:**
-
-    `None`
-
-### 请求参数：
-
-    `None`
+    GET /api/users
 
 ### 返回：
 
-	**Code:** `200`
+**Code:** `200`
 
-    **Content:** 
-    ```
-    [
-        {
-            "username": "admin",
-            "title": "",
-            "name": "",
-            "nickname": "",
-            "email": "",
-            "roles": [
-            "staff"
-            ],
-            "disabled": false,
-            "manager": "",
-            "team": "",
-            "mobile": "",
-            "mobile2": "",
-            "office": "",
-            "join_at": "0001-01-01T00:00:00Z",
-            "number": 0,
-            "nation": "",
-            "created_at": "0001-01-01T00:00:00Z",
-            "updated_at": "2017-02-20T21:18:07.79+08:00",
-            "last_active_ip": "",
-            "last_active_at": "0001-01-01T00:00:00Z",
-            "parents": []
-        }
-    ]
-    ```
+**Content:** 
+```
+[
+    {
+        "username": "admin",
+        "title": "",
+        "name": "",
+        "nickname": "",
+        "email": "",
+        "roles": [
+        "staff"
+        ],
+        "disabled": false,
+        "manager": "",
+        "team": "",
+        "mobile": "",
+        "mobile2": "",
+        "office": "",
+        "join_at": "0001-01-01T00:00:00Z",
+        "number": 0,
+        "nation": "",
+        "created_at": "0001-01-01T00:00:00Z",
+        "updated_at": "2017-02-20T21:18:07.79+08:00",
+        "last_active_ip": "",
+        "last_active_at": "0001-01-01T00:00:00Z",
+        "parents": []
+    }
+]
+```
 
 ### 错误信息：
 

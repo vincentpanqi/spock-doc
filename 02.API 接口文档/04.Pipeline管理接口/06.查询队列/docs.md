@@ -26,23 +26,23 @@ taxonomy:
         "branch": "develop",
         "pull_request_number": 62,
         "commit_id": "98a663e5a6effc9337a29353acf338d484ae1609",
-        "created": "2017-02-22T11:22:19.217+08:00"
-    },
-    {
-        "id": "58ad03ec8a4b40d217000002",
-        "pipeline_name": "pipeline-1",
-        "status": 1,
-        "task_creator": "yaoshipu",
-        "repo_name": "aslan-platform",
-        "repo_owner": "yaoshipu",
-        "branch": "develop",
-        "pull_request_number": 62,
-        "commit_id": "98a663e5a6effc9337a29353acf338d484ae1609",
-        "created": "2017-02-22T11:22:20.064+08:00"
+        "created": 1490255652
     }
 ]
 ```	
+### 返回参数说明；
 
+|id|队列任务ID|
+|---|---|
+|pipeline_name|工作流名称|
+|status|队列中任务的状态|
+|task_creator|任务创建者|
+|repo_name|代码库名称|
+|repo_owner|代码库所有人|
+|branch|代码编译分支|
+|pull_request_number|prID|
+|commit_id|commitID|
+|created|创建时间|
 
 ### 错误信息：
 

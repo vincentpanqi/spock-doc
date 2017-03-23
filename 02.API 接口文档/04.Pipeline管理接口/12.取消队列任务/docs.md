@@ -4,28 +4,24 @@ taxonomy:
     category: docs
 ---
 
+### 注意事项
+
+- 用于取消队列中的任务
+
 ### 请求：
 
-    `/api/pipeline/queue/:id`
+    DELETE /api/pipeline/queue/:id
 
-* **Method:**
+### 请求参数说明：
 
-    `DELETE`
-
-* **URL Params:**
-
-	`None`
-
-### 请求参数：
-
-    `None`
+- id：队列任务的ID
 
 ### 返回：
 
-	**Code:** `200`
+**Code:** `200`
 
 ### 错误信息：
 
-	**Code:** `689`
-  	
-  	**Content:** `{ "message" : "Cancel Queue Task Error", "code": "689", "description": "error details"}`
+**Code:** `689`
+
+**Content:** `{ "message" : "Cancel Queue Task Error", "code": "689", "description": "error details"}`

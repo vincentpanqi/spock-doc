@@ -8,26 +8,14 @@ taxonomy:
 
 ### 请求：
 
-    `/api/users/ldap/sync`
-
-* **Method:**
-
-    `GET`
-
-* **URL Params:**
-
-    `None`
-
-### 请求参数：
-
-    `None`
+    GET /api/users/ldap/sync
 
 ### 返回：
 
-	**Code:** `200`
+**Code:** `200`
 
 ### 错误信息：
 
-	**Code:** `603`
-  	
-  	**Content:** `{ "message" : "Sync LDAP error", "code": "603", "description": "error details"}`
+**Code:** `603`
+
+**Content:** `{ "message" : "Sync LDAP error", "code": "603", "description": "error details"}`

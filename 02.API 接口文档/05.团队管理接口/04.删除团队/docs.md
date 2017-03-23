@@ -6,26 +6,14 @@ taxonomy:
 
 ### 请求：
 
-    `/api/teams/:name`
-
-* **Method:**
-
-    `DELETE`
-
-* **URL Params:**
-
-    `None`
-
-### 请求参数：
-
-    `None`
+   DELETE /api/teams/:name
 
 ### 返回：
 
-	**Code:** `200`
+**Code:** `200`
 
 ### 错误信息：
 
-	**Code:** `617`
-  	
-  	**Content:** `{ "message" : "Get Team Error", "code": "617", "description": "error details"}`
+**Code:** `617`
+
+**Content:** `{ "message" : "Get Team Error", "code": "617", "description": "error details"}`

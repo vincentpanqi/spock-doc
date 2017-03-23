@@ -4,28 +4,24 @@ taxonomy:
     category: docs
 ---
 
+### 注意事项
+
+- 用于取消运行中的任务
+
 ### 请求：
 
-    `/api/tasks/id/:id/pipeline/:name`
+    DELETE /api/tasks/id/:id/pipeline/:name
 
-* **Method:**
+### 请求参数说明：
 
-    `DELETE`
-
-* **URL Params:**
-
-	`None`
-
-### 请求参数：
-
-    `None`
+- id：运行任务的ID
 
 ### 返回：
 
-	**Code:** `200`
+**Code:** `200`
 
 ### 错误信息：
 
-	**Code:** `688`
-  	
-  	**Content:** `{ "message" : "Cancel Task Error", "code": "688", "description": "error details"}`
+**Code:** `688`
+
+**Content:** `{ "message" : "Cancel Task Error", "code": "688", "description": "error details"}`

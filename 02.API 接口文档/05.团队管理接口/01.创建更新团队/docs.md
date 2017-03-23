@@ -8,40 +8,33 @@ taxonomy:
 
 ### 请求：
 
-    `/api/teams`
+    POST /api/teams
 
-* **Method:**
-
-    `POST`
-
-* **URL Params:**
-
-    `None`
 
 ### 请求参数：
 
-	**Type:** `application/json`
-	
-	**Content:**
+**Type:** `application/json`
 
-    ```
-    {
-        "name": "CIA",
-        "leader": "Jason Bourne",
-        "description": "agent"
-    }
-	```	
+**Content:**
+
+```
+{
+    "name": "CIA",
+    "leader": "Jason Bourne",
+    "description": "agent"
+}
+```	
 
 ### 返回：
 
-	**Code:** `200`
+**Code:** `200`
 
 ### 错误信息：
 
-	**Code:** `400`
-  	
-  	**Content:** `{ "message" : "Invalid Team Args", "code": "400", "description": "error details"}`
+**Code:** `400`
 
-	**Code:** `616`
-  	
-  	**Content:** `{ "message" : "Upsert Team Error", "code": "616", "description": "error details"}`
+**Content:** `{ "message" : "Invalid Team Args", "code": "400", "description": "error details"}`
+
+**Code:** `616`
+
+**Content:** `{ "message" : "Upsert Team Error", "code": "616", "description": "error details"}`
