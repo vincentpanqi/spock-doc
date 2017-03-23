@@ -4,37 +4,26 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+### 请求：
 
-    `/api/products/names`
+    GET /api/products/names
 
-* **Method:**
 
-    `GET`
+### 返回：
 
-* **URL Params:**
+**Code:** `200`
 
-	`None`
+**Content:**
 
-* **Data Params:**
+```
+[
+    "memcached",
+    "kodo"
+]
+```
 
-    `None`
+### 错误信息:
 
-* **返回:**
+**Code:** `621`
 
-	**Code:** `200`
-
-    **Content:**
-
-    ```
-    [
-        "memcached",
-        "kodo"
-    ]
-    ```
-
-* **错误信息:**
-
-	**Code:** `621`
-  	
-  	**Content:** `{ "message" : "List Product Names Error", "code": "621"}`
+**Content:** `{ "message" : "List Product Names Error", "code": "621"}`

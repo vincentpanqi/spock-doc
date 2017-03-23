@@ -69,6 +69,7 @@ taxonomy:
 
 
 - services:
+
 |参数|描述|
 |---|---|
 |service_name|服务名称，全局唯一|
@@ -92,12 +93,9 @@ taxonomy:
 
 **Code:** `400`
 
-```
 **Content:** `{ "message" : "Invalid StackTemplateArgs", "code": "400", "description": "error details"}`
-```
 
 **Code:** `610`
 
-```
 **Content:** `{ "message" : "Create Template Error", "code": "610", "description": "error details"}`
-```
+

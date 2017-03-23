@@ -4,28 +4,16 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+### 请求：
 
-    `/api/products/:productName`
+    DELETE /api/products/:productName
 
-* **Method:**
+### 返回:
 
-    `DELETE`
+**Code:** `200`
 
-* **URL Params:**
+### 错误信息:
 
-	`None`
+**Code:** `624`
 
-* **Data Params:**
-
-    `None`
-
-* **返回:**
-
-	**Code:** `200`
-
-* **错误信息:**
-
-	**Code:** `624`
-  	
-  	**Content:** `{ "message" : "Delete Product Error", "code": "624"}`
+**Content:** `{ "message" : "Delete Product Error", "code": "624"}`
