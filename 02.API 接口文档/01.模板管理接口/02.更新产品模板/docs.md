@@ -11,21 +11,21 @@ taxonomy:
 
 ### **请求:**
 
-    `POST /api/templates/products/:productName`
+    POST /api/templates/products/:productName
 
 ### **请求参数:**
 
-	**Type:** `application/json`
-	
-	**Content:**
+**Type:** `application/json`
 
-    ```
-	{
-		"product_name": "kodo-single",
-		"enabled": true,
-        "stack_deps": [["mongo","mysql"],["kodo"]]
-	}
-	```	
+**Content:**
+
+```
+{
+	"product_name": "kodo-single",
+	"enabled": true,
+	"stack_deps": [["mongo","mysql"],["kodo"]]
+}
+```	
 ### **模版参数:**
 
 |  参数       |   描述                     |
@@ -36,14 +36,14 @@ taxonomy:
 
 ### **返回:**
 
-	**Code:** `200`
+**Code:** `200`
 
 ### **错误信息:**
 
-	**Code:** `400`
-  	
-  	**Content:** `{ "message" : "Invalid ProductTemplateArgs", "code": "400", "description": "error details"}`
+**Code:** `400`
 
-	**Code:** `611`
-  	
-  	**Content:** `{ "message" : "Update Template Error", "code": "611", "description": "error details"}`
+**Content:** `{ "message" : "Invalid ProductTemplateArgs", "code": "400", "description": "error details"}`
+
+**Code:** `611`
+
+**Content**: `{ "message" : "Update Template Error", "code": "611", "description": "error details"}`

@@ -6,65 +6,65 @@ taxonomy:
 
 ### **请求:**
 
-    `GET /api/templates/products`
+    GET /api/templates/products
 
 ### **返回:**
 
-	**Code:** `200`
+**Code:** `200`
 
-	**Content:**
+**Content:**
 
-	```
-	[
-		{
-			"product_name": "stack-single",
-			"enabled": true,
-			"stack_deps": [
-			[
+```
+[
+	{
+		"product_name": "stack-single",
+		"enabled": true,
+		"stack_deps": [
+		[
+			{
+			"stack_name": "stack-1",
+			"internal": false,
+			"services": [
 				{
-				"stack_name": "stack-1",
-				"internal": false,
-				"services": [
+				"service_name": "service-1",
+				"image": {
+					"name": "service-1",
+					"tag": "test"
+				},
+				"unit_type": "1U1G",
+				"envs": [{"key":"value"},{"key","value"}],
+				"command": ["ls"],
+				"config_paths": ["/disk1"],
+				"volume_args": [
 					{
-					"service_name": "service-1",
-					"image": {
-						"name": "service-1",
-						"tag": "test"
-					},
-					"unit_type": "1U1G",
-					"envs": [{"key":"value"},{"key","value"}],
-					"command": ["ls"],
-					"config_paths": ["/disk1"],
-					"volume_args": [
-						{
-						"unit_type": "SSD1_10G",
-						"mount_path": "/disk1"
-						}
-					],
-					"access_points": [{
-						"type": "domain",
-						"proto": "http",
-						"ap_port": 25000,
-						"backend_port": 25000
-					}],
-					"test": {
-						"command": "",
-						"result_path": ""
-					}
+					"unit_type": "SSD1_10G",
+					"mount_path": "/disk1"
 					}
 				],
-				"init_scripts": [
-					{
-					"service_name": "service-1",
-					"command": "echo"
-					}
-				]
+				"access_points": [{
+					"type": "domain",
+					"proto": "http",
+					"ap_port": 25000,
+					"backend_port": 25000
+				}],
+				"test": {
+					"command": "",
+					"result_path": ""
+				}
+				}
+			],
+			"init_scripts": [
+				{
+				"service_name": "service-1",
+				"command": "echo"
 				}
 			]
-			]
-		}
-	]
-	```	
+			}
+		]
+		]
+	}
+]
+```	
 ### **返回参数:**
 
 |  参数       |   描述                     |
@@ -77,6 +77,6 @@ taxonomy:
 
 ### **错误信息:**
 
-	**Code:** `612`
+**Code:** `612`
 
-  	**Content:** `{ "message" : "List Template Error", "code": "612", "description": "error details"}`
+**Content:** `{ "message" : "List Template Error", "code": "612", "description": "error details"}`
