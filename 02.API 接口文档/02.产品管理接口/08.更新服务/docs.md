@@ -4,44 +4,43 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+### 请求：
 
-    `/api/stacks/:stackName/services/:serviceName`
+    POST /api/stacks/:stackName/services/:serviceName
 
-* **Method:**
+### 请求参数：
 
-    `POST`
+**Type:** `application/json`
 
-* **URL Params:**
+**Content:**
 
-    `None`
+```
+{
+	"image": {
+		"name": "new_name",
+		"tag": "new_tag"
+	},
+	"unit_type": "2U4G"
+}
+```
 
-* **Data Params:**
+### 请求参数说明:
 
-	**Type:** `application/json`
-	
-	**Content:**
+|参数|描述|
+|---|---|
+|image|服务镜像|
+|unit_type|服务容器的规格，详见“容器规格”|
 
-	```
-	{
-		"image": {
-			"name": "new_name",
-			"tag": "new_tag"
-		},
-		"unit_type": "2U4G"
-	}
-	```
+### 返回:
 
-* **返回:**
+**Code:** `200`
 
-	**Code:** `200`
+### 错误信息：
 
-* **错误信息:**
+**Code:** `400`
 
-	**Code:** `400`
-  	
-  	**Content:** `{ "message" : "Invalid UpdateServiceArgs", "code": "400"}`
+**Content:** `{ "message" : "Invalid UpdateServiceArgs", "code": "400"}`
 
-	**Code:** `631`
-  	
-  	**Content:** `{ "message" : "Update Service Error", "code": "631"}`
+**Code:** `631`
+
+**Content:** `{ "message" : "Update Service Error", "code": "631"}`

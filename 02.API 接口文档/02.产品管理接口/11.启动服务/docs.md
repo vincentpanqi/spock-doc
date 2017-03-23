@@ -4,28 +4,16 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+### 请求：
 
-    `/api/stacks/:stackName/services/:serviceName/start`
+    POST /api/stacks/:stackName/services/:serviceName/start
 
-* **Method:**
+### 返回：
 
-    `POST`
+**Code:** `200`
 
-* **URL Params:**
+### 错误信息：
 
-    `None`
+**Code:** `634`
 
-* **Data Params:**
-
-    `None`
-
-* **返回:**
-
-	**Code:** `200`
-
-* **错误信息:**
-
-	**Code:** `634`
-  	
-  	**Content:** `{ "message" : "Start Service Error", "code": "634"}`
+**Content:** `{ "message" : "Start Service Error", "code": "634"}`

@@ -4,28 +4,22 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+### 请求：
 
-    `/api/stacks/:stackName/restart`
+   POST /api/stacks/:stackName/restart
 
-* **Method:**
+### 请求参数说明：
 
-    `POST`
+|参数|描述|
+|---|---|
+|stackName|服务组名称|
 
-* **URL Params:**
+### 返回:
 
-    `None`
+**Code:** `200`
 
-* **Data Params:**
+### 错误信息:
 
-    `None`
+**Code:** `624`
 
-* **返回:**
-
-	**Code:** `200`
-
-* **错误信息:**
-
-	**Code:** `624`
-  	
-  	**Content:** `{ "message" : "Restart Stack Error", "code": "624"}`
+**Content:** `{ "message" : "Restart Stack Error", "code": "624"}`

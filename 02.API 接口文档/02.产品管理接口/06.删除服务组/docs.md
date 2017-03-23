@@ -4,28 +4,16 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+### 请求
 
-    `/api/stacks/:stackName`
+    DELETE /api/stacks/:stackName
 
-* **Method:**
+### 返回:
 
-    `DELETE`
+**Code:** `200`
 
-* **URL Params:**
+### 错误信息:
 
-    `None`
+**Code:** `623`
 
-* **Data Params:**
-
-    `None`
-
-* **返回:**
-
-	**Code:** `200`
-
-* **错误信息:**
-
-	**Code:** `623`
-  	
-  	**Content:** `{ "message" : "Delete Stack Error", "code": "623"}`
+**Content:** `{ "message" : "Delete Stack Error", "code": "623"}`

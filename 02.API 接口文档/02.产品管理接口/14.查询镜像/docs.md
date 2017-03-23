@@ -4,39 +4,35 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+### 请求：
 
-    `/api/images/services/:serviceName`
+    GET /api/images/services/:serviceName
 
-* **Method:**
 
-    `GET`
+### 返回：
 
-* **URL Params:**
+**Code:** `200`
 
-    `None`
+**Content:** 
 
-* **Data Params:**
+```
+[
+	{
+	"name": "helloworld-go",
+	"tag": "demo"
+	}
+]
+```	
 
-    `None`
+### 返回参数说明：
 
-* **返回:**
+|参数|描述|
+|---|---|
+|name|服务名称，命名规则[a-z0-9_.-]|
+|tag|标签，命名规则[A-Za-z0-9_.-]|
 
-	**Code:** `200`
+### 错误信息：
 
-	**Content:** 
+**Code:** `640`
 
-	```
-	[
-	  {
-	    "name": "helloworld-go",
-	    "tag": "demo"
-	  }
-	]
-	```	
-
-* **错误信息:**
-
-	**Code:** `640`
-  	
-  	**Content:** `{ "message" : "List Images Error", "code": "640"}`
+**Content:** `{ "message" : "List Images Error", "code": "640"}`

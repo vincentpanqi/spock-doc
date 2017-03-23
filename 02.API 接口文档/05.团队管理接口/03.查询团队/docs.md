@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+### 请求：
 
     `/api/teams/:name`
 
@@ -16,11 +16,11 @@ taxonomy:
 
     `None`
 
-* **Data Params:**
+### 请求参数：
 
     `None`
 
-* **返回:**
+### 返回：
 
 	**Code:** `200`
 
@@ -36,7 +36,7 @@ taxonomy:
     }
     ```
 
-* **错误信息:**
+### 错误信息：
 
 	**Code:** `614`
   	

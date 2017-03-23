@@ -4,41 +4,34 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+### 请求：
 
-    `/api/configs`
+    POST /api/configs
 
-* **Method:**
 
-    `POST`
-
-* **URL Params:**
-
-    `None`
-
-* **Data Params:**
+### 请求参数：
 	
-	**Type:** `application/json`
-	
-	**Content:**
+**Type:** `application/json`
 
-	```
-  {
-    "namespace": "qiniu",
-    "vars":
-    {
-      "ka": "va-spockadmin",
-      "kb": "vb-spockadmin"
-    }
-  }
-  ```
+**Content:**
 
-* **返回:**
+```
+{
+"namespace": "qiniu",
+"vars":
+{
+    "ka": "va-spockadmin",
+    "kb": "vb-spockadmin"
+}
+}
+```
 
-    **Code:** `200`
+### 返回：
 
-* **错误信息:**
+**Code:** `200`
 
-    **Code:** `643`
-  	
-  	**Content:** `{ "message" : "Create Config Service Specs Error", "code": "643"}`
+### 错误信息：
+
+**Code:** `643`
+
+**Content:** `{ "message" : "Create Config Service Specs Error", "code": "643"}`

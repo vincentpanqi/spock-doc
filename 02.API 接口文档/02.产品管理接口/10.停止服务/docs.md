@@ -4,28 +4,16 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+### 请求：
 
-    `/api/stacks/:stackName/services/:serviceName/stop`
+    POST /api/stacks/:stackName/services/:serviceName/stop
 
-* **Method:**
+### 返回：
 
-    `POST`
+**Code:** `200`
 
-* **URL Params:**
+### 错误信息：
 
-    `None`
+**Code:** `633`
 
-* **Data Params:**
-
-    `None`
-
-* **返回:**
-
-	**Code:** `200`
-
-* **错误信息:**
-
-	**Code:** `633`
-  	
-  	**Content:** `{ "message" : "Stop Service Error", "code": "633"}`
+**Content:** `{ "message" : "Stop Service Error", "code": "633"}`

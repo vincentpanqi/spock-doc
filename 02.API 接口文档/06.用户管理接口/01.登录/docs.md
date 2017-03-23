@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-* **URL:**
+### 请求：
 
     `/api/user/signin`
 
@@ -16,7 +16,7 @@ taxonomy:
 
     `None`
 
-* **Data Params:**
+### 请求参数：
 
 	**Type:** `application/x-www-form-urlencoded`
 	
@@ -26,11 +26,11 @@ taxonomy:
     username=yaoshipu&password=Qiniu%40999
 	```	
 
-* **返回:**
+### 返回：
 
 	**Code:** `200`
 
-* **错误信息:**
+### 错误信息：
 
 	**Code:** `400`
   	
