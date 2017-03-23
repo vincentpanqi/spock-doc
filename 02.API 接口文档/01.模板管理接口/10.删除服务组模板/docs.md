@@ -4,38 +4,38 @@ taxonomy:
     category: docs
 ---
 
+####注意事项
+
 - 需要管理员权限
 
-* **URL:**
+### 请求：
 
-    `/api/templates/stacks`
+    DELETE /api/templates/stacks
 
-* **Method:**
+### 请求参数：
 
-    `DELETE`
+**Type:** `application/json`
 
-* **URL Params:**
+**Content:**
 
-    `None`
+```
+{
+	"stack_names": ["stack-2", "stack-3"]
+}
+```	
 
-* **Data Params:**
+### 参数说明：
 
-    **Type:** `application/json`
-	
-	**Content:**
+|参数|说明|
+|---|---|
+|stack_names|服务组名称，可同时删除多个服务组|
 
-    ```
-	{
-		"stack_names": ["stack-2", "stack-3"]
-	}
-	```	
+### 返回:
 
-* **返回:**
+**Code:** `200`
 
-	**Code:** `200`
+### 错误信息:**
 
-* **错误信息:**
+**Code:** `614`
 
-	**Code:** `614`
-  	
-  	**Content:** `{ "message" : "Delete Template Error", "code": "614", "description": "error details"}`
+**Content:** `{ "message" : "Delete Template Error", "code": "614", "description": "error details"}`
