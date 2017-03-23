@@ -4,30 +4,31 @@ taxonomy:
     category: docs
 ---
 
+#### 注意事项
+
+- 接口说明：用户用于和admin配置的键值对保持同步
+
 ### 请求：
 
-    `/api/configs/sync`
+    POST /api/configs/sync
 
-* **Method:**
+### 路径参数
 
-    `POST`
+**Optional:** 默认不填是false
 
-* **URL Params:**
+`force=<false|true>`
 
-    **Optional:** 默认不填是false
+### 路径参数说明
 
-    `force=<false|true>`
-
-### 请求参数：
-
-    `None`
+- force=true: 强制同步admin的最新配置，用户自己增加的配置不会被清空
+- force=false: 非强制同步admin的最新配置，只添加admin新增的配置项，不覆盖用户的修改
 
 ### 返回：
 
-    **Code:** `200`
+**Code:** `200`
 
 ### 错误信息：
 
-    **Code:** `625`
-  	
-  	**Content:** `{ "message" : "Sync Config Service Specs Error", "code": "625"}`
+**Code:** `625`
+
+**Content:** `{ "message" : "Sync Config Service Specs Error", "code": "625"}`

@@ -6,38 +6,30 @@ taxonomy:
 
 ### 请求：
 
-    `/api/configs`
-
-* **Method:**
-
-    `PUT`
-
-* **URL Params:**
-
-    `None`
+    PUT /api/configs
 
 ### 请求参数：
 	
-	**Type:** `application/json`
-	
-	**Content:**
+**Type:** `application/json`
 
-	```
-  {
+**Content:**
+
+```
+{
     "vars":
-    {
-      "ka": "va-updated",
-      "kb": "vb-updated"
-    }
-  }
-  ```
+        {
+            "ka": "va-updated",
+            "kb": "vb-updated"
+        }
+}
+```
 
 ### 返回：
 
-    **Code:** `200`
+**Code:** `200`
 
 ### 错误信息：
 
-    **Code:** `642`
-  	
-  	**Content:** `{ "message" : "Update Config Service Specs Error", "code": "642"}`
+**Code:** `642`
+
+**Content:** `{ "message" : "Update Config Service Specs Error", "code": "642"}`

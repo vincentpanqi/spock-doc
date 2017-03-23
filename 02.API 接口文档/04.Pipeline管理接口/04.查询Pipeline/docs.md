@@ -6,48 +6,36 @@ taxonomy:
 
 ### 请求：
 
-    `/api/pipelines/:pipelineName`
-
-* **Method:**
-
-    `GET`
-
-* **URL Params:**
-
-	`None`
-
-### 请求参数：
-
-    `None`
+    GET /api/pipelines/:pipelineName
 
 ### 返回：
 
-	**Code:** `200`
+**Code:** `200`
 
-	**Content:** 
-	
-	```
-    {
-        "pipeline_name": "pipeline-1",
-        "creator": "yaoshipu",
-        "stack_name": "stack-1",
-        "servive_name": "service-1",
-        "test_stack": "test1",
-        "test_service": "doratest",
-        "test_env": "spock",
-        "repo_owner": "yaoshipu",
-        "repo_name": "aslan-platform",
-        "run_build": true,
-        "run_deploy": true,
-        "run_test": true,
-        "run_distribute": true,
-        "updated": "2017-02-21T18:58:13.355+08:00",
-        "enabled": true
-    }
-	```	
+**Content:** 
+
+```
+{
+    "pipeline_name": "pipeline-1",
+    "creator": "yaoshipu",
+    "stack_name": "stack-1",
+    "servive_name": "service-1",
+    "test_stack": "test1",
+    "test_service": "doratest",
+    "test_env": "spock",
+    "repo_owner": "yaoshipu",
+    "repo_name": "aslan-platform",
+    "run_build": true,
+    "run_deploy": true,
+    "run_test": true,
+    "run_distribute": true,
+    "updated": "2017-02-21T18:58:13.355+08:00",
+    "enabled": true
+}
+```	
 
 ### 错误信息：
 
-	**Code:** `682`
-  	
-  	**Content:** `{ "message" : "Get Pipeline Error", "code": "682", "description": "error details"}`
+**Code:** `682`
+
+**Content:** `{ "message" : "Get Pipeline Error", "code": "682", "description": "error details"}`

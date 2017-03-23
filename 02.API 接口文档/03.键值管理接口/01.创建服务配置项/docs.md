@@ -17,14 +17,20 @@ taxonomy:
 
 ```
 {
-"namespace": "qiniu",
-"vars":
-{
-    "ka": "va-spockadmin",
-    "kb": "vb-spockadmin"
-}
+    "namespace": "qiniu", 
+    "vars": {
+        "ka": "va-spockadmin", 
+        "kb": "vb-spockadmin"
+    }
 }
 ```
+
+### 请求参数说明：
+
+|参数|描述|
+|---|---|
+|namespace|命名空间，暂时只能为qiniu，后端代码里写死|
+|vars|键值对|
 
 ### 返回：
 
