@@ -5,6 +5,11 @@ taxonomy:
 process:
 	twig: true
 ---
+#### 注意事项
+
+- public_ip 所有用户的同一个服务的public_ip相同，由后端直接申请
+- 前端不再需要配置ap_port，如果配置domain，那么ap_port默认80，不允许用户自定义
+- 如果接入类型选择public_ip，那么ap_port由后端自动生成，前端只需要在服务详情页展示
 
 ### 接入类型type
 
