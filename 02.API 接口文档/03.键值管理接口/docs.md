@@ -8,11 +8,13 @@ taxonomy:
 
     `#m_username#` : 子app名称
 
-    服务端口和IP地址的魔法变量命名方式
+* **Magic Variable List:**
+    
+    服务端口和IP地址键值命名方式
 
-    端口     `#m_<stack>_<service>_<proto>_port#` 
+    端口     `{{.<stack>_<service>_<proto>_port}}` 
 
-    IP地址     `#m_<stack>_<service>_ip#` 
+    IP地址     `{{.<stack>_<service>_ip}}` 
 
-    eg.kodo io 服务公网ip，http协议的端口   `#m_kodo_io_http_port#` 
+    eg.kodo io 服务公网ip，http协议的端口   `{{.kodo_io_http_port}}` 
 
