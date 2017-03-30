@@ -4,6 +4,10 @@ taxonomy:
     category: docs
 ---
 
+#### 注意事项
+
+- stackName＋service_name 不能超过25个字符
+
 ### 请求：
 
     POST /api/stacks/:stackName/services
