@@ -4,6 +4,10 @@ taxonomy:
     category: docs
 ---
 
+
+- 需要admin权限
+
+
 ### 请求：
 
     DELETE /api/cron/jobs/:id

@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-- 需要管理员权限
+- 基本信息需要user权限，roles相关的信息需要 superadmin 权限，team相关信息admin权限
 
 ### 请求：
 

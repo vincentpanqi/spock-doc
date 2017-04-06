@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-- 需要管理员权限
+- 需要super admin权限
 
 ### 请求：
 

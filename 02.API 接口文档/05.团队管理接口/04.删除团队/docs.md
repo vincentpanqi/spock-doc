@@ -4,6 +4,8 @@ taxonomy:
     category: docs
 ---
 
+- 需要super admin权限
+
 ### 请求：
 
     DELETE /api/teams/:name

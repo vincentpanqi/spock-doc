@@ -4,6 +4,9 @@ taxonomy:
     category: docs
 ---
 
+
+- 需要user权限
+
 ### 请求:
 
     GET /api/templates/products/:productName

@@ -4,6 +4,8 @@ taxonomy:
     category: docs
 ---
 
+- 需要admin权限
+
 ### 请求：
 
     POST /api/cron/jobs
