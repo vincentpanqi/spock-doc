@@ -17,7 +17,7 @@ taxonomy:
 ```
 [
     {
-        "job_name": "demo-job1",
+        "id": "58e469558a4b401572000001",
         "schedule": "@every 5s",
         "pipeline_name": "demo-pipeline",
         "repo_name": "sample-helloworld",

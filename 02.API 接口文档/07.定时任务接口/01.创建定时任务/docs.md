@@ -17,7 +17,6 @@ taxonomy:
 ```
 {
     "pipeline_name": "demo-pipeline",
-    "job_name": "demo-job",
     "repo_owner": "yaoshipu",
     "repo_name": "sample-helloworld",
     "branch": "develop",
@@ -31,7 +30,6 @@ taxonomy:
 |参数|描述|
 |---|---|
 |pipeline_name|工作流名称|
-|job_name|更新的服务所在的服务组|
 |repo_owner|代码库的owner|
 |repo_name|代码库的名称|
 |branch|代码库的分支|

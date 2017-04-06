@@ -6,7 +6,7 @@ taxonomy:
 
 ### 请求：
 
-    GET /api/cron/jobs/:jobName
+    GET /api/cron/jobs/:pipelineName
 
 ### 返回：
 
@@ -15,17 +15,19 @@ taxonomy:
 **Content:** 
 
 ```
-{
-    "job_name": "demo-job1",
-    "schedule": "@every 5s",
-    "pipeline_name": "demo-pipeline",
-    "repo_name": "sample-helloworld",
-    "repo_owner": "yaoshipu",
-    "branch": "develop",
-    "updated": 1491038931,
-    "enabled": true,
-    "creator": "yaoshipu"
-}
+[
+    {
+        "id": "58e469558a4b401572000001",
+        "schedule": "@every 5s",
+        "pipeline_name": "demo-pipeline",
+        "repo_name": "sample-helloworld",
+        "repo_owner": "yaoshipu",
+        "branch": "develop",
+        "updated": 1491038931,
+        "enabled": true,
+        "creator": "yaoshipu"
+    }
+]
 ```	
 
 ### 错误信息：

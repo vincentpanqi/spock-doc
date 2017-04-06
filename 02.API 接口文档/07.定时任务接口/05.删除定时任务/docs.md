@@ -6,7 +6,7 @@ taxonomy:
 
 ### 请求：
 
-    DELETE /api/cron/jobs/:jobName
+    DELETE /api/cron/jobs/:id
 
 ### 返回：
 
