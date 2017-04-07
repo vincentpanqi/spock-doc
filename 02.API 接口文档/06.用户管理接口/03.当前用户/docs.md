@@ -25,7 +25,7 @@ taxonomy:
     ],
     "disabled": false,
     "manager": "",
-    "team": "",
+    "teams": [""],
     "mobile": "",
     "mobile2": "",
     "office": "",
