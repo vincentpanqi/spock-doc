@@ -10,7 +10,7 @@ taxonomy:
 
 ### 请求：
 
-    DELETE /api/templates/stacks
+    POST /api/templates/stacks/delete
 
 ### 请求参数：
 

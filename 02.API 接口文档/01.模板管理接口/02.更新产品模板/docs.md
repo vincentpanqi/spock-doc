@@ -11,7 +11,7 @@ taxonomy:
 
 ### 请求:
 
-    POST /api/templates/products/:productName
+    PUT /api/templates/products/:productName
 
 ### 请求参数:
 

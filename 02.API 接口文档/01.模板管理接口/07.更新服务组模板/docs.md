@@ -11,7 +11,7 @@ taxonomy:
 
 ### 请求:
 
-  POST /api/templates/stacks/:stackName
+  PUT /api/templates/stacks/:stackName
 
 
 ### 请求参数:

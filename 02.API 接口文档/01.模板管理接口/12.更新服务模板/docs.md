@@ -10,7 +10,7 @@ taxonomy:
 
 ### 请求：
 
-    POST /api/templates/stacks/:stackName/services/:serviceName
+    PUT /api/templates/stacks/:stackName/services/:serviceName
 
 ### 请求参数：
 

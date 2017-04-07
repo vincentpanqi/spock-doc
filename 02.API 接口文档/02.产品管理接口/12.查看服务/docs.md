@@ -6,7 +6,7 @@ taxonomy:
 
 ### 请求：
 
-   GET /api/inspect/stacks/:stackName/services/:serviceName
+   GET /api/stacks/:stackName/services/:serviceName/inspect
 
 
 ### 返回：
