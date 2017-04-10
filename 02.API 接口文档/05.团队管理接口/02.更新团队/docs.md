@@ -8,7 +8,7 @@ taxonomy:
 
 ### 请求：
 
-    POST /api/teams
+    PUT /api/teams/:name
 
 
 ### 请求参数：
@@ -19,7 +19,7 @@ taxonomy:
 
 ```
 {
-    "name": "CIA",
+    "name": "new-CIA",
     "leader": "Jason Bourne",
     "description": "agent"
 }
@@ -35,6 +35,6 @@ taxonomy:
 
 **Content:** `{ "message" : "Invalid Team Args", "code": "400", "description": "error details"}`
 
-**Code:** `616`
+**Code:** `608`
 
-**Content:** `{ "message" : "Upsert Team Error", "code": "616", "description": "error details"}`
+**Content:** `{ "message" : "Update Team Error", "code": "608", "description": "error details"}`

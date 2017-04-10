@@ -16,6 +16,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `617`
+**Code:** `609`
 
-**Content:** `{ "message" : "Get Team Error", "code": "617", "description": "error details"}`
+**Content:** `{ "message" : "Delete Team Error", "code": "609", "description": "error details"}`

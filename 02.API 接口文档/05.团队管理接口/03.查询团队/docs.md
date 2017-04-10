@@ -26,6 +26,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `614`
+**Code:** `605`
 
-**Content:** `{ "message" : "Get Team Error", "code": "614", "description": "error details"}`
+**Content:** `{ "message" : "Get Team Error", "code": "605", "description": "error details"}`

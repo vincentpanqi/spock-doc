@@ -8,7 +8,7 @@ taxonomy:
 
 ### 请求：
 
-    POST /api/pipelines/:pipelineName
+    PUT /api/pipelines/:pipelineName
 
 ### 请求参数：
 
