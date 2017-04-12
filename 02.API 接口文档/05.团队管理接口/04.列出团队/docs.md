@@ -28,6 +28,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `606`
+**Code:** `6008`
 
-**Content:** `{ "message" : "List Team Error", "code": "606", "description": "error details"}`
+**Content:** `{ "message" : "List Team Error", "code": "6008", "description": "error details"}`

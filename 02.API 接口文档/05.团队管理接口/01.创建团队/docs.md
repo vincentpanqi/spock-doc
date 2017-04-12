@@ -35,6 +35,6 @@ taxonomy:
 
 **Content:** `{ "message" : "Invalid Team Args", "code": "400", "description": "error details"}`
 
-**Code:** `607`
+**Code:** `6009`
 
-**Content:** `{ "message" : "Create Team Error", "code": "607", "description": "error details"}`
+**Content:** `{ "message" : "Create Team Error", "code": "6009", "description": "error details"}`

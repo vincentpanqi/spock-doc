@@ -46,6 +46,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `601`
+**Code:** `6002`
 
-**Content:** `{ "message" : "Update user error", "code": "601", "description": "error details"}`
+**Content:** `{ "message" : "Update user error", "code": "6002", "description": "error details"}`

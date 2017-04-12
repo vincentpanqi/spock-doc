@@ -46,6 +46,6 @@ taxonomy:
 
 ### 错误信息：
 
-    **Code:** `602`
+    **Code:** `6003`
   	
-  	**Content:** `{ "message" : "List users error", "code": "602", "description": "error details"}`
+  	**Content:** `{ "message" : "List users error", "code": "6003", "description": "error details"}`

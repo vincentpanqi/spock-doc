@@ -16,6 +16,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `603`
+**Code:** `6004`
 
-**Content:** `{ "message" : "Sync LDAP error", "code": "603", "description": "error details"}`
+**Content:** `{ "message" : "Sync LDAP error", "code": "6004", "description": "error details"}`
