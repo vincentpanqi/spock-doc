@@ -26,6 +26,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `6007`
+**Code:** `6010`
 
-**Content:** `{ "message" : "Get Team Error", "code": "6007", "description": "error details"}`
+**Content:** `{ "message" : "Get Team Error", "code": "6010", "description": "error details"}`
