@@ -7,11 +7,24 @@ taxonomy:
 
 #### 注意事项
 
-- 此接口用于删除用户的全部配置，慎用
+- 此接口用于删除用户的配置
 
 ### 请求：
 
-    DELETE /api/configs
+    POST /api/configs/delete
+
+### 请求参数：
+	
+**Type:** `application/json`
+
+**Content:**
+
+```
+{
+    "vars": [ "ka", "kb"]
+}
+
+```
 
 ### 返回：
 

@@ -16,11 +16,10 @@ taxonomy:
 
 ```
 {
-    "vars":
-        {
-            "ka": "va-updated",
-            "kb": "vb-updated"
-        }
+    "vars": {
+        "ka": "va-updated",
+        "kb": "vb-updated"
+    }
 }
 ```
 
