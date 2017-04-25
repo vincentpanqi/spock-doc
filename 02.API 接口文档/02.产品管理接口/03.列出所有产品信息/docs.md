@@ -6,7 +6,10 @@ taxonomy:
 
 #### 注意事项
 
-- 产品稳定性is_stable: 当且仅当所有stacks处于running状态
+- 产品状态有如下3种:
+    Successful: 运行良好
+    Unstable:   运行不稳定（部分stack/service挂了）
+    Failed:     创建失败
 
 ### 请求：
 
@@ -22,6 +25,7 @@ taxonomy:
 [
     {
         "product_name": "memcached",
+        "status": "successful",
         "stack_deps": [
             [
                 {
@@ -43,11 +47,11 @@ taxonomy:
                     "status": "RUNNING"
                 }
             ]
-        ],
-        "is_stable": true
+        ]
     },
     {
         "product_name": "kodo",
+        "status": "failed",
         "stack_deps": [
             [
                 {
@@ -91,8 +95,7 @@ taxonomy:
                     "status": "RUNNING"
                 }
             ]
-        ],
-        "is_stable": true
+        ]
     }
 ]
 ```
