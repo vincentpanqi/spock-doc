@@ -39,7 +39,8 @@ taxonomy:
     }],
     "test": {
         "command": "",
-        "result_path": ""
+        "result_path": "",
+        "threshold": 0
     }
 }
 ```

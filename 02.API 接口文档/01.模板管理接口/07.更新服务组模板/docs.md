@@ -56,7 +56,8 @@ taxonomy:
               }],
               "test": {
                   "command": "ls",
-                  "result_path": "/disk1"
+                  "result_path": "/disk1",
+                  "threshold": 0
               }
           }
       ]
