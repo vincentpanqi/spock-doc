@@ -131,6 +131,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `685`
+**Code:** `6806`
 
-**Content:** `{ "message" : "Get Pipelines Error", "code": "685", "description": "error details"}`
+**Content:** `{ "message" : "Get Pipelines Error", "code": "6806", "description": "error details"}`

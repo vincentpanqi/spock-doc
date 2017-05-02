@@ -46,6 +46,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `684`
+**Code:** `6805`
 
-**Content:** `{ "message" : "List Queue Items Error", "code": "684", "description": "error details"}`
+**Content:** `{ "message" : "List Queue Items Error", "code": "6805", "description": "error details"}`

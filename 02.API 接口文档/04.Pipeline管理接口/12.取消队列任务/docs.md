@@ -22,6 +22,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `689`
+**Code:** `6900`
 
-**Content:** `{ "message" : "Cancel Queue Task Error", "code": "689", "description": "error details"}`
+**Content:** `{ "message" : "Cancel Queue Task Error", "code": "6900", "description": "error details"}`

@@ -22,6 +22,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `688`
+**Code:** `6809`
 
-**Content:** `{ "message" : "Cancel Task Error", "code": "688", "description": "error details"}`
+**Content:** `{ "message" : "Cancel Task Error", "code": "6809", "description": "error details"}`

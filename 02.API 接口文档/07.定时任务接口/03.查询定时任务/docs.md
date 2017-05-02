@@ -6,7 +6,7 @@ taxonomy:
 
 ### 请求：
 
-    GET /api/cron/jobs/:pipelineName
+    GET /api/cron/jobs/pipeline/:name
 
 ### 返回：
 

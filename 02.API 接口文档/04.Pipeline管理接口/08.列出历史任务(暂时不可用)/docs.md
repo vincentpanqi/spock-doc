@@ -1,5 +1,5 @@
 ---
-title: 列出历史任务
+title: 列出历史任务(暂时不可用)
 taxonomy:
     category: docs
 ---
@@ -58,6 +58,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `686`
+**Code:** `6807`
 
-**Content:** `{ "message" : "List Tasks Error", "code": "686"}`
+**Content:** `{ "message" : "List All Tasks Error", "code": "6807"}`

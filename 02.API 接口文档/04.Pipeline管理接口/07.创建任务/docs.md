@@ -41,6 +41,6 @@ taxonomy:
 
 **Content:** `{ "message" : "Invalid Pipeline Args", "code": "400", "description": "error details"}`
 
-**Code:** `689`
+**Code:** `6901`
 
-**Content:** `{ "message" : "Enqueue Task Error", "code": "689", "description": "error details"}`
+**Content:** `{ "message" : "Enqueue Task Error", "code": "6901", "description": "error details"}`
