@@ -21,6 +21,9 @@ taxonomy:
         "task_creator": "yaoshipu",
         "pipeline_name": "pipeline-1",
         "status": 1,
+        "deploy_env": "yaoshipu"
+        "stack_name": "kodo",
+        "service_name": "io",
         "created": "2017-02-21T22:52:27.443+08:00",
         "updated": "2017-02-21T22:52:27.443+08:00",
         "build_task": {
@@ -35,15 +38,18 @@ taxonomy:
             "jobs": []
         },
         "deploy_task": {
-            "stack_name": "stack-1",
-            "servive_name": "service-1",
             "image_tag": "20170221-22-develop",
-            "test_env": "spock",
             "status": 0
         },
+        "deploy_cs_task": {
+            "service_name": "io",
+            "package_file": "io.20170221-v22-develop.tar.gz",
+            "test_env": "dev",
+            "status": 0
+        }
         "test_task": {
             "stack_name": "test1",
-            "servive_name": "doratest",
+            "service_name": "doratest",
             "status": 0
         },
         "distribute_task": {
