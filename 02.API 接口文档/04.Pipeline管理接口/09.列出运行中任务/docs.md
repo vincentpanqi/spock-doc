@@ -20,7 +20,7 @@ taxonomy:
         "pipeline_name": "pipeline-1",
         "creator": "yaoshipu",
         "stack_name": "stack-1",
-        "servive_name": "service-1",
+        "service_name": "service-1",
         "test_stack": "test",
         "test_service": "doratest",
         "test_env": "spock",

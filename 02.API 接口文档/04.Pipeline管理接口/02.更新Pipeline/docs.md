@@ -20,14 +20,15 @@ taxonomy:
 {
     "pipeline_name": "pipeline-1",
     "stack_name": "stack-1",
-    "servive_name": "service-1",
+    "service_name": "service-1",
     "test_stack": "test",
     "test_service": "doratest",
     "deploy_env": "spock",
     "repo_owner": "yaoshipu",
     "repo_name": "aslan-platform",
     "run_build": true,
-    "run_deploy": true,
+    "run_deploy_kirk": true,
+    "run_deploy_cs": false,
     "run_test": true,
     "run_distribute": true,
     "enabled": true

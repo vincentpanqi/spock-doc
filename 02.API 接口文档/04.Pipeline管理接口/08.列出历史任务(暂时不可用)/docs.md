@@ -36,14 +36,14 @@ taxonomy:
         },
         "deploy_task": {
             "stack_name": "stack-1",
-            "servive_name": "service-1",
+            "service_name": "service-1",
             "image_tag": "20170221-22-develop",
             "test_env": "spock",
             "status": 0
         },
         "test_task": {
             "stack_name": "test1",
-            "servive_name": "doratest",
+            "service_name": "doratest",
             "status": 0
         },
         "distribute_task": {
