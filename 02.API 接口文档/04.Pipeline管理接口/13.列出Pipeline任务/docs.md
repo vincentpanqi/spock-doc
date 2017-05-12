@@ -38,6 +38,8 @@ taxonomy:
             "jobs": []
         },
         "deploy_task": {
+            "stack_name": "stack-1",
+            "service_name": "service-1",
             "image_tag": "20170221-22-develop",
             "status": 0
         },
