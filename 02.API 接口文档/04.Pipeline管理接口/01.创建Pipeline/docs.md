@@ -28,7 +28,6 @@ taxonomy:
     "repo_name": "aslan-platform",
     "run_build": true,
     "run_deploy": true,
-    "run_deploy_kirk": true,
     "run_deploy_cs": false,
     "run_test": true,
     "run_distribute": true,
@@ -50,6 +49,7 @@ taxonomy:
 |repo_name|代码库的名称|
 |run_build|是否包含编译模块|
 |run_deploy|是否包含部署模块|
+|run_deploy_cs|是否包含cs部署模块|
 |run_test|是否包含测试模块|
 |run_distribute|是否包含分发模块|
 |enabled|是否启用pipeline|

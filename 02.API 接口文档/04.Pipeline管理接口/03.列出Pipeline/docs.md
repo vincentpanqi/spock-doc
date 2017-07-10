@@ -28,11 +28,10 @@ taxonomy:
         "repo_name": "aslan-platform",
         "run_build": true,
         "run_deploy": true,
-        "run_deploy_kirk": true,
         "run_deploy_cs": false,
         "run_test": true,
         "run_distribute": true,
-        "updated": "2017-02-21T15:29:16.477+08:00",
+        "updated": 1490080434,
         "enabled": true
     }
 ]

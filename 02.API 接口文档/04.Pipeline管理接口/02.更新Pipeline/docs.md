@@ -8,7 +8,7 @@ taxonomy:
 
 ### 请求：
 
-    PUT /api/pipelines/:pipelineName
+    PUT /api/pipelines/:name
 
 ### 请求参数：
 
@@ -28,7 +28,6 @@ taxonomy:
     "repo_name": "aslan-platform",
     "run_build": true,
     "run_deploy": true,
-    "run_deploy_kirk": true,
     "run_deploy_cs": false,
     "run_test": true,
     "run_distribute": true,

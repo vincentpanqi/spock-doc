@@ -9,7 +9,7 @@ taxonomy:
 
 ### 请求：
 
-    DELETE /api/pipelines/:pipelineName
+    DELETE /api/pipelines/:name
 
 
 ### 返回：
