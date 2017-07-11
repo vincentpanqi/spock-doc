@@ -16,23 +16,38 @@ taxonomy:
 
 ```
 [
-    {
-        "pipeline_name": "pipeline-1",
-        "creator": "yaoshipu",
-        "stack_name": "stack-1",
-        "service_name": "service-1",
-        "test_stack": "test",
-        "test_service": "doratest",
-        "test_env": "spock",
-        "repo_owner": "yaoshipu",
-        "repo_name": "aslan-platform",
-        "run_build": true,
-        "run_deploy": true,
-        "run_test": true,
-        "run_distribute": true,
-        "updated": "2017-02-21T15:29:16.477+08:00",
-        "enabled": true
+  {
+    "id": 39,
+    "task_creator": "yaoshipu",
+    "pipeline_name": "demo-pipeline",
+    "status": "runnning",
+    "created": 1499742178,
+    "updated": 1499742178,
+    "deploy_env": "yaoshipu",
+    "stack_name": "demo",
+    "build_task": {
+      "repo_owner": "yaoshipu",
+      "repo_name": "sample-helloworld",
+      "branch": "master",
+      "ref": "refs/pull/1/head",
+      "commit_id": "0c4f2154374accbbdf8e165a4a93209fc972976d",
+      "image_tag": "20170711-v39-master",
+      "status": "runnning",
+      "project_id": 0,
+      "build_nubmer": 0,
+      "jobs": []
+    },
+    "deploy_task": {
+      "image_tag": "20170711-v39-master",
+      "status": "created"
+    },
+    "distribute_task": {
+      "package_file": "-20170711-v39-master.tar.gz",
+      "image_name": "",
+      "image_tag": "20170711-v39-master",
+      "status": "created"
     }
+  }
 ]
 ```	
 

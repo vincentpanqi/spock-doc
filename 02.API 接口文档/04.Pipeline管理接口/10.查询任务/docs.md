@@ -32,10 +32,10 @@ taxonomy:
         "project_id": 356,
         "build_nubmer": 35,
         "jobs": [
-        {
-            "number": 1,
-            "status": "success"
-        }
+            {
+                "number": 1,
+                "status": "success"
+            }
         ]
     },
     "deploy_task": {
