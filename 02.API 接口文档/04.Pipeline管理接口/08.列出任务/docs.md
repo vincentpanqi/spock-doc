@@ -6,7 +6,11 @@ taxonomy:
 
 ### 请求：
 
-    GET /api/tasks/pipeline/:pipelinename
+    GET /api/tasks/pipeline/:name
+
+### 请求参数说明：
+
+- name: pipeline 名称
 
 ### 返回：
 

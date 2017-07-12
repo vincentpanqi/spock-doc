@@ -8,6 +8,11 @@ taxonomy:
 
     GET /api/tasks/id/:id/pipeline/:name
 
+### 请求参数说明：
+
+- id：任务的ID
+- name: pipeline 名称
+
 ### 返回：
 
 **Code:** `200`
