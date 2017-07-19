@@ -20,7 +20,7 @@ taxonomy:
     "id": 39,
     "task_creator": "yaoshipu",
     "pipeline_name": "demo-pipeline",
-    "status": "runnning",
+    "status": "running",
     "created": 1499742178,
     "updated": 1499742178,
     "deploy_env": "yaoshipu",
@@ -32,7 +32,7 @@ taxonomy:
       "ref": "refs/pull/1/head",
       "commit_id": "0c4f2154374accbbdf8e165a4a93209fc972976d",
       "image_tag": "20170711-v39-master",
-      "status": "runnning",
+      "status": "running",
       "project_id": 0,
       "build_nubmer": 0,
       "jobs": []

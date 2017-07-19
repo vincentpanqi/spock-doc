@@ -84,7 +84,7 @@ taxonomy:
 |值|描述|
 |--|---|
 |created|已创建|
-|runnning|运行中|
+|running|运行中|
 |passed|成功|
 |failed|失败|
 |timeout|超时|

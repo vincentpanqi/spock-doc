@@ -10,7 +10,7 @@ taxonomy:
 
 ### 注意事项
 
-- 全部任务状态 [created, runnning, passed, failed, timeout, cancelled]
+- 全部任务状态 [created, running, passed, failed, timeout, cancelled]
 
 ### 返回：
 
