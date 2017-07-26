@@ -10,11 +10,12 @@ taxonomy:
 
 ### 请求：
 
-    DELETE /api/pipeline/queue/:id
+    GET /api/tasks/restart/id/:id/pipeline/:name
 
 ### 请求参数说明：
 
 - id：队列任务的ID
+- name: pipeline 名称
 
 ### 返回：
 
@@ -22,6 +23,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `6900`
+**Code:** `6903`
 
-**Content:** `{ "message" : "Cancel Queue Task Error", "code": "6900", "description": "error details"}`
+**Content:** `{ "message" : "Restart Task Error", "code": "6903", "description": "error details"}`

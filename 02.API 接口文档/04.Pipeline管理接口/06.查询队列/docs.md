@@ -8,6 +8,8 @@ taxonomy:
 
     GET /api/pipeline/queue
 
+    GET /api/pipeline/queue/realtime [websocket 接口]
+
 ### 返回：
 
 **Code:** `200`
