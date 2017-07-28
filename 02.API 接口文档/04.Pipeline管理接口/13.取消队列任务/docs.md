@@ -1,5 +1,5 @@
 ---
-title: 取消队列任务
+title: 重试队列任务
 taxonomy:
     category: docs
 ---

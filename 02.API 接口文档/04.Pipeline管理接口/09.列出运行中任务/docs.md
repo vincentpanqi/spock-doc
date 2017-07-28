@@ -8,6 +8,8 @@ taxonomy:
 
     GET /api/tasks/running
 
+    GET /api/tasks/running/realtime [websocket 接口]
+
 ### 返回：
 
 **Code:** `200`
