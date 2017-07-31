@@ -19,7 +19,7 @@ taxonomy:
 - name: Github Repo
 - buildNum: Drone build number
 - jobNum: Drone job number 默认情况下jobNum=1, 只有在跑了matrix情况下才有其他的jobNum
-- proc: Drone process name 可以通过查询构建 API 获取全部 procs 信息
+- proc: Drone process name 可以通过查询任务API或者查询构建 API 获取全部 procs 信息
 
 ### 返回:
 
