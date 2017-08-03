@@ -23,6 +23,7 @@ taxonomy:
 {
     "id": 22,
     "task_creator": "yaoshipu",
+    "task_revoker": "spock",
     "pipeline_name": "pipeline-1",
     "status": passed,
     "created": "2017-02-21T22:52:27.443+08:00",

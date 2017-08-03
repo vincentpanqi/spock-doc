@@ -21,8 +21,10 @@ taxonomy:
   {
     "id": 39,
     "task_creator": "yaoshipu",
+    "task_revoker": "",
     "pipeline_name": "demo-pipeline",
-    "status": "running",
+    "current_status": "running",
+    "final_status": "running",
     "created": 1499742178,
     "updated": 1499742178,
     "deploy_env": "yaoshipu",

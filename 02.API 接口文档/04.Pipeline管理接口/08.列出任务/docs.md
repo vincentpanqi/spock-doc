@@ -23,16 +23,20 @@ taxonomy:
   {
     "id": 38,
     "task_creator": "yaoshipu",
+    "task_revoker": "spock",
     "pipeline_name": "demo-pipeline",
-    "status": "failed",
+    "current_status": "failed",
+    "final_status": "failed",
     "created": 1499741890,
     "updated": 1499741890
   },
   {
     "id": 37,
     "task_creator": "yaoshipu",
+    "task_revoker": "spock",
     "pipeline_name": "demo-pipeline",
-    "status": "failed",
+    "current_status": "failed",
+    "final_status": "failed",
     "created": 1499324913,
     "updated": 1499324913
   }
