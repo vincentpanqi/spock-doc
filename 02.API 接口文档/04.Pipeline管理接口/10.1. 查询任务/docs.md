@@ -30,17 +30,49 @@ taxonomy:
     "updated": "2017-02-21T22:52:27.443+08:00",
     "build_task": {
         "repo_owner": "yaoshipu",
-        "repo_name": "aslan-platform",
-        "branch": "develop",
-        "commit_id": "98a663e5a6effc9337a29353acf338d484ae1609",
-        "image_tag": "20170221-22-develop",
-        "status": 2,
-        "project_id": 356,
-        "build_nubmer": 35,
-        "jobs": [
+        "repo_name": "sample-helloworld",
+        "branch": "master",
+        "pull_request_id": 3,
+        "commit_id": "ad233d6e6b11158bb1848d6d231720d6c0203f15",
+        "commit_message": "Test",
+        "image_tag": "20170730-v2-master",
+        "status": "passed",
+        "build_nubmer": 33,
+        "procs": [
             {
-                "number": 1,
-                "status": "success"
+                "id": 724,
+                "pid": 1,
+                "ppid": 0,
+                "pgid": 1,
+                "name": "",
+                "state": "success",
+                "exit_code": 0,
+                "start_time": 1501421410,
+                "end_time": 1501421436,
+                "children": [
+                {
+                    "id": 725,
+                    "pid": 2,
+                    "ppid": 1,
+                    "pgid": 2,
+                    "name": "sample-helloworld.git",
+                    "state": "success",
+                    "exit_code": 0,
+                    "start_time": 1501421412,
+                    "end_time": 1501421422
+                },
+                {
+                    "id": 726,
+                    "pid": 3,
+                    "ppid": 1,
+                    "pgid": 3,
+                    "name": "build",
+                    "state": "success",
+                    "exit_code": 0,
+                    "start_time": 1501421423,
+                    "end_time": 1501421433
+                }
+                ]
             }
         ]
     },

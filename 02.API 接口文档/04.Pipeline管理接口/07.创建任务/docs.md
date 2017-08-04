@@ -18,7 +18,6 @@ taxonomy:
 ```
 {
     "pipeline_name": "pipeline-1",
-    "task_creator": "yaoshipu",
     "repo_name": "aslan-platform",
     "repo_owner": "yaoshipu",
     "branch": "develop",
@@ -26,6 +25,15 @@ taxonomy:
     "commit_id": "98a663e5a6effc9337a29353acf338d484ae1609"
 }
 ```	
+
+|key|value|
+|---|---|
+|pipeline_name|工作流名称|
+|repo_name|代码库名称|
+|repo_owner|代码库所有人|
+|branch|代码编译分支 如果提供了pull_request_number, branch会被忽略|
+|pull_request_number|pull request number|
+|commit_id|commitID 如果是提交PR, 则需要提供|
 
 ### 请求参数说明：
 
