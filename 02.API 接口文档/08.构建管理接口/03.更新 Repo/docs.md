@@ -6,7 +6,7 @@ taxonomy:
 
 ### 请求：
 
-    PUT /api/repo/:owner/:name
+    PUT /api/repos/:owner/:name
 
 ### 请求参数:
 

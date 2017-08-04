@@ -6,7 +6,7 @@ taxonomy:
 
 ### 请求：
 
-    DELETE /api/repo/:owner/:name
+    DELETE /api/repos/:owner/:name
 
 ### 返回：
 
