@@ -17,9 +17,6 @@ taxonomy:
   "image": [
     "index.qiniu.com/spock/docker-client",
     "index.qiniu.com/spock/golang:1.7"
-  ],
-  "event": [
-    "pull_request"
   ]
 }
 ```
