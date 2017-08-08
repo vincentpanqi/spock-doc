@@ -6,9 +6,9 @@ taxonomy:
 
 ### 请求：
 
-    GET /api/pipeline/queue
+    GET /api/queue
 
-    GET /api/pipeline/queue/realtime [websocket 接口]
+    WS  /api/queue/ws
 
 ### 返回：
 

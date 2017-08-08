@@ -6,7 +6,7 @@ taxonomy:
 
 ### 请求：
 
-    GET /api/pipeline/task/status
+    GET /api/status/pipelines
 
 ### 注意事项
 

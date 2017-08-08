@@ -7,6 +7,8 @@ taxonomy:
 ### 请求：
 
     GET /api/tasks/pipeline/:name
+    
+    WS  /api/tasks/ws/pipeline/:name
 
 ### 请求参数说明：
 

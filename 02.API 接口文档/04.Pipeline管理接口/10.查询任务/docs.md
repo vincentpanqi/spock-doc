@@ -8,6 +8,8 @@ taxonomy:
 
     GET /api/tasks/id/:id/pipeline/:name
 
+    WS  /api/tasks/ws/id/:id/pipeline/:name
+
 ### 请求参数说明：
 
 - id：任务的ID

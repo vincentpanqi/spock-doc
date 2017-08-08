@@ -10,12 +10,11 @@ taxonomy:
 
 ### 请求：
 
-    POST /api/tasks/restart/id/:id/pipeline/:name
+    DELETE /api/queue/:id
 
 ### 请求参数说明：
 
 - id：任务的ID
-- name: pipeline 名称
 
 ### 返回：
 

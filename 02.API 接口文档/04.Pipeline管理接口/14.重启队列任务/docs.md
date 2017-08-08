@@ -10,7 +10,7 @@ taxonomy:
 
 ### 请求：
 
-    POST /api/pipeline/queue/:id/restart
+    POST /api/queue/:id/restart
 
 ### 请求参数说明：
 
