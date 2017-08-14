@@ -22,6 +22,7 @@ taxonomy:
 ```
 {
 	"product_name": "kodo-double",
+	"visibility": "public",
 	"stack_deps": [
 		[
 			{
@@ -110,6 +111,7 @@ taxonomy:
 |参数|说明|
 |---|---|
 |product_name|产品名称，全局唯一|
+|visibility| 授权他人部署， 参数为 private, public, 默认为 private
 |stack_deps|产品依赖服务组，服务组按配置的先后顺序启动，具体参数详见“创建服务组模版”|
 
 
