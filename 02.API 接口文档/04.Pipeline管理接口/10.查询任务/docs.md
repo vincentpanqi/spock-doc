@@ -27,9 +27,14 @@ taxonomy:
     "task_creator": "yaoshipu",
     "task_revoker": "spock",
     "pipeline_name": "pipeline-1",
+    "jira_summaries": ["Test1"],
     "status": passed,
     "created": "2017-02-21T22:52:27.443+08:00",
     "updated": "2017-02-21T22:52:27.443+08:00",
+    "stack_name": "demo",
+    "service_name": "demo",
+    "test_stack": "demo",
+    "test_service": "demo",
     "build_task": {
         "repo_owner": "yaoshipu",
         "repo_name": "sample-helloworld",
@@ -79,22 +84,20 @@ taxonomy:
         ]
     },
     "deploy_task": {
-        "stack_name": "stack-1",
-        "service_name": "service-1",
         "image_tag": "20170221-22-develop",
         "status": failed,
         "error": "update service error: Update Service Error"
     },
     "test_task": {
-        "stack_name": "test1",
-        "service_name": "doratest",
-        "status": created
+        "status": created,
+        "error": ""
     },
     "distribute_task": {
         "package_file": "service-1-20170221-22-develop.tar.gz",
         "image_name": "service-1",
         "image_tag": "20170221-22-develop",
-        "status": created
+        "status": created,
+        "error": ""
     }
 }
 ```	
@@ -105,6 +108,7 @@ taxonomy:
 |---|---|
 |id|任务ID|
 |task_creator|任务执行者|
+|pipeline_name|工作流名称|
 |pipeline_name|工作流名称|
 |status|任务状态，详见下表|
 |created|创建时间|
