@@ -36,7 +36,8 @@ taxonomy:
     "updated_at": "2017-02-20T21:18:07.853+08:00",
     "last_active_ip": "127.0.0.1",
     "last_active_at": "2017-02-20T17:19:17.171+08:00",
-    "parents": []
+    "parents": [],
+    "github_id", "yaoshipu"
 }
 ```
 
