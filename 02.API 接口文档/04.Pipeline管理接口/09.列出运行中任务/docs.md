@@ -23,7 +23,19 @@ taxonomy:
     "task_creator": "yaoshipu",
     "task_revoker": "",
     "pipeline_name": "demo-pipeline",
-    "jira_summaries": ["Test1"],
+    "jira_issues": [
+      {
+        "id": "71810",
+        "key": "ASLAN-1441",
+        "url": "https://jira.qiniu.io/browse/ASLAN-1441",
+        "summary": "pipeline task",
+        "description": "pipeline task",
+        "priority": "p3",
+        "creator": "fulichao",
+        "assignee": "fulichao",
+        "reporter": "fulichao"
+      }
+    ],
     "current_status": "running",
     "final_status": "running",
     "created": 1499742178,

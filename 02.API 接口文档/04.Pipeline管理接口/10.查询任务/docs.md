@@ -27,7 +27,19 @@ taxonomy:
     "task_creator": "yaoshipu",
     "task_revoker": "spock",
     "pipeline_name": "pipeline-1",
-    "jira_summaries": ["Test1"],
+    "jira_issues": [
+      {
+        "id": "71810",
+        "key": "ASLAN-1441",
+        "url": "https://jira.qiniu.io/browse/ASLAN-1441",
+        "summary": "pipeline task",
+        "description": "pipeline task",
+        "priority": "p3",
+        "creator": "fulichao",
+        "assignee": "fulichao",
+        "reporter": "fulichao"
+      }
+    ],
     "status": passed,
     "created": "2017-02-21T22:52:27.443+08:00",
     "updated": "2017-02-21T22:52:27.443+08:00",
