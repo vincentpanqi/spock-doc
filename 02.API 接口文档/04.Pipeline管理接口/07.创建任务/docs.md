@@ -22,9 +22,10 @@ taxonomy:
     "repo_owner": "yaoshipu",
     "branch": "develop",
     "pull_request_number": 62,
-    "commit_id": "98a663e5a6effc9337a29353acf338d484ae1609"
+    "commit_id": "98a663e5a6effc9337a29353acf338d484ae1609",
+    "deploy_env", "zhujiali"
 }
-```	
+```
 
 |key|value|
 |---|---|

@@ -1,5 +1,5 @@
 ---
-title: 更新 Repo Secret Value
+title: 删除 Repo Secret Images
 taxonomy:
     category: docs
 ---
