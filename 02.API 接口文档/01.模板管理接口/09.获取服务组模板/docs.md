@@ -52,8 +52,7 @@ taxonomy:
 		}],
 		"test": {
 			"command": "",
-			"result_path": "",
-			"threshold": 0
+			"result_path": ""
 		}
 		}
 	],

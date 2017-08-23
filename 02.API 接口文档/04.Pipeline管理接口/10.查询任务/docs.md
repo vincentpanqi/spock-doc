@@ -96,12 +96,17 @@ taxonomy:
         ]
     },
     "deploy_task": {
-        "image_tag": "20170221-22-develop",
-        "status": failed,
-        "error": "update service error: Update Service Error"
+      "image_tag": "20170711-v39-master",
+      "status": "created",
+      "error": ""
     },
     "test_task": {
-        "status": created,
+        "stack_name": "test",
+        "service_name": "test",
+        "threshold": 0,
+        "kodo_key": "",
+        "kodo_hash": "",
+        "status": "created",
         "error": ""
     },
     "distribute_task": {

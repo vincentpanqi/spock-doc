@@ -23,6 +23,7 @@ taxonomy:
     "service_name": "service-1",
     "test_stack": "test",
     "test_service": "doratest",
+    "test_threshold": 0,
     "deploy_env": "spock",
     "repo_owner": "yaoshipu",
     "repo_name": "aslan-platform",

@@ -43,8 +43,6 @@ taxonomy:
     "deploy_env": "yaoshipu",
     "stack_name": "demo",
     "service_name": "demo",
-    "test_stack": "demo",
-    "test_service": "demo",
     "build_task": {
       "repo_owner": "yaoshipu",
       "repo_name": "sample-helloworld",
@@ -58,9 +56,19 @@ taxonomy:
       "build_nubmer": 0,
       "jobs": []
     },
+    "test_task": {
+        "stack_name": "test",
+        "service_name": "test",
+        "threshold": 0,
+        "kodo_key": "",
+        "kodo_hash": "",
+        "status": "created",
+        "error": ""
+    },
     "deploy_task": {
       "image_tag": "20170711-v39-master",
-      "status": "created"
+      "status": "created",
+      "error": ""
     },
     "distribute_task": {
       "package_file": "-20170711-v39-master.tar.gz",
