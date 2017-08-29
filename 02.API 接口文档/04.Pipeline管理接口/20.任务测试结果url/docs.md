@@ -34,4 +34,8 @@ taxonomy:
 
 **Code:** `6812`
 
-**Content:** `{ "message" : "Test Result Not Found Error", "code": "6806"}`
+**Content:** `{ "message" : "Test Task Not Found Error", "code": "6812"}`
+
+**Code:** `6813`
+
+**Content:** `{ "message" : "Test Result Not Found Error", "code": "6813"}`

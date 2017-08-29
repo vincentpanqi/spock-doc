@@ -6,16 +6,12 @@ taxonomy:
  
 ### 请求：
 
-    GET /api/logs/search/container?stack_name=kodo&service_name=io&from_time=1481440608&to_time=1484032608&tail=true&from=0&size=3
+    GET /api/task/id/:id/pipeline/:name/logs/search?tail=true&from=0&size=3
 
 ### 请求参数说明：
 
 |参数|说明|
 |---|---|
-|stack_name|服务组名称|
-|service_name|服务名称|
-|from_time|起始时间|
-|to_time|终止时间|
 |tail|是否从尾部开始,true/false|
 |from|日志的开始位置,默认值:0|
 |size|先前的日志条数,默认值:0|
@@ -37,6 +33,22 @@ taxonomy:
 
 ### 错误信息:
 
-**Code:** `6208`
+**Code:** `400`
 
-**Content:** `{ "message" : "Search Container Logs Error", "code": "6208"}`
+**Content:** `{ "message" : "Invalid GetPipelineTestResultUrl id Args", "code": "400", "description": "error details"}`
+
+**Code:** `400`
+
+**Content:** `{ "message" : "Invalid GetPipelineTestResultUrl tail Args", "code": "400", "description": "error details"}`
+
+**Code:** `6806`
+
+**Content:** `{ "message" : "Get Task Error", "code": "6806"}`
+
+**Code:** `6812`
+
+**Content:** `{ "message" : "Test Task Not Found Error", "code": "6812"}`
+
+**Code:** `6814`
+
+**Content:** `{ "message" : "Test Logs History Not Found Error", "code": "6814"}`
