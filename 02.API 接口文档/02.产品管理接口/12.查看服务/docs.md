@@ -17,6 +17,8 @@ taxonomy:
 
 ```
 {
+	"created": 1504064707
+	"updated": 1504064707
 	"service_name": "io",
 	"state": "DEPLOYED",
 	"status": "RUNNING",
