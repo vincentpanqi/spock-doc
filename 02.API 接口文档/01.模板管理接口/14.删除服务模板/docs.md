@@ -1,5 +1,5 @@
 ---
-title: 删除产品模板
+title: 删除服务模板
 taxonomy:
     category: docs
 ---
@@ -7,16 +7,17 @@ taxonomy:
 #### 注意事项
 
 - 需要`admin`权限
+- 删除服务以及其全部版本
 
-### 请求:
+### 请求：
 
-    DELETE /api/templates/products/:name
+    DELETE /api/templates/services/:name
 
 ### 返回:
 
 **Code:** `200`
 
-### 错误信息:
+### 错误信息:**
 
 **Code:** `6104`
 

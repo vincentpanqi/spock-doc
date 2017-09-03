@@ -4,15 +4,15 @@ taxonomy:
   category: docs
 ---
 
-
 #### 注意事项
 
-- 需要admin权限
+- 需要`admin`权限
+- 服务组模板依赖次序在`serviecs`里描述
+- 服务组模板依赖服务,需要调用`创建服务模板`预先创建
 
 ### 请求:
 
-  PUT /api/templates/stacks/:stackName
-
+  PUT /api/templates/groups/:name
 
 ### 请求参数:
 
@@ -22,50 +22,21 @@ taxonomy:
 
 ```
 {
-      "stack_name": "stack-2",
-      "internal": false,
-      "init_scripts": [
-          {
-          "service_name": "service-2",
-          "command": "urlencode"
-          }
-      ],
-      "services": [
-          {
-              "service_name": "service-2",
-              "unit_type": "1U1G",
-              "ports": [32111],
-              "env": [{"key":"value"},{"key":"value"}],
-              "command": ["ls"],
-              "config_paths": ["/disk1"],
-              "volume_args": [
-                  {
-                  "mount_path": "/disk1",
-                  "unit_type": "SSD1_10G"
-                  }
-              ],
-              "image": {
-                  "name": "service-1",
-                  "tag": "test"
-              },
-              "access_point":  [{
-                "type": "domain",
-                "proto": "http",
-                "ap_port": 25000,
-                "backend_port": 25000
-              }],
-              "test": {
-                  "command": "ls",
-                  "result_path": "/disk1",
-                  "threshold": 0
-              }
-          }
-      ]
-  }
+  "group_name": "group-A",
+  "services": [
+    [
+      "service-1",
+      "service-2"
+    ],
+    [
+      "service-3"
+    ]
+  ]
+}
 ```
 ### 参数说明
 
-详见“创建服务组模版”
+详见`创建服务组模版`
 
 ### 返回:
 
@@ -75,9 +46,9 @@ taxonomy:
 
 **Code:** `400`
 
-**Content:** `{ "message" : "Invalid StackTemplateArgs", "code": "400", "description": "error details"}`
+**Content:** `{ "message" : "Invalid GroupTemplateArgs", "code": "400", "description": "error details"}`
 
-**Code:** `611`
+**Code:** `6101`
 
-**Content:** `{ "message" : "Upsert Template Error", "code": "611", "description": "error details"}`
+**Content:** `{ "message" : "Upsert Template Error", "code": "6101", "description": "error details"}`
 

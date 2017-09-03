@@ -4,9 +4,13 @@ taxonomy:
     category: docs
 ---
  
+#### 注意事项
+
+- 需要`user`权限
+
 ### 请求：
 
-    GET /api/templates/stacks
+    GET /api/templates/groups
 
 ### 返回:
 
@@ -16,64 +20,45 @@ taxonomy:
 
 ```
 [
-	{
-		"stack_name": "kodo",
-		"internal": false,
-		"init_scripts": [
-			{
-				"service_name": "service-1",
-				"command": "echo"
-			}
-		],
-		"stack_deps": [
-			{
-				"service_name": "pfdstg",
-				"unit_type": "1U1G",
-				"envs": [{"key":"value"},{"key":"value"}],
-				"command": ["ls"],
-				"config_paths": [
-					"/pfdstg/qboxpfdstg.conf"
-				],
-				"volume_args": [
-					{
-						mount_path: "/disk1/pfddisk",
-						unit_type: "SSD1_10G"
-					},
-					{
-						mount_path: "/disk2/pfddisk",
-						unit_type: "SSD1_10G"
-					},
-					{
-						mount_path: "/disk3/pfddisk",
-						unit_type: "SSD1_10G"
-					}
-				],
-				"image": {
-					"name": "pfdstg",
-					"tag": "test"
-				},
-				"access_points": [{
-					"type": "domain",
-					"proto": "http",
-					"ap_port": 25000,
-					"backend_port": 25000
-				}],
-				"test": {
-					"command": "ls",
-					"result_path": "/disk1"
-				}
-			}
-		]
-	}
+  {
+    "group_name": "group-A",
+    "create_time": 1504422408,
+    "update_time": 1504422466,
+    "update_by": "yaoshipu",
+    "services": [
+      [
+        "service-1",
+        "service-2"
+      ],
+      [
+        "service-3"
+      ]
+    ]
+  },
+  {
+    "group_name": "group-B",
+    "create_time": 1504429474,
+    "update_time": 1504429474,
+    "update_by": "yaoshipu",
+    "services": [
+      [
+        "service-1",
+        "service-2"
+      ],
+      [
+        "service-3"
+      ]
+    ]
+  }
 ]
 ```	
 
 ### 返回参数说明
 
-详见“创建服务组模版”
+详见`创建服务组模版`
 
 ### 错误信息:
 
-**Code:** `612`
+**Code:** `6102`
 
-**Content:** `{ "message" : "List Template Error", "code": "612", "description": "error details"}`
+**Content:** `{ "message" : "List Template Error", "code": "6102", "description": "error details"}`

@@ -5,13 +5,14 @@ taxonomy:
 ---
 
 #### 注意事项
-- 需要admin权限
-- 产品模板依赖次序在`stack_deps`里描述
-- 产品模板依赖服务组需要调用创建服务组模板预先创建
+
+- 需要`admin`权限
+- 产品模板依赖次序在`groups`里描述
+- 产品模板依赖服务组,需要调用`创建服务组模板`预先创建
 
 ### 请求:
 
-    PUT /api/templates/products/:productName
+    PUT /api/templates/products/:name
 
 ### 请求参数:
 
@@ -21,18 +22,17 @@ taxonomy:
 
 ```
 {
-	"product_name": "kodo-single",
-	"enabled": true,
-	"stack_deps": [["mongo","mysql"],["kodo"]]
+  "product_name": "product-X",
+  "groups": [
+    ["group-A", "group-B"],
+	["group-C", "group-D"]
+  ],
+  "enabled": true
 }
 ```	
 ### 参数说明:
 
-|  参数       |   描述                     |
-|------------|----------------------------|
-|product_name|产品名称，全局唯一             |
-|enabled     |是否对外启用模版               |
-|stack_deps  |产品依赖，产品按配置的先后顺序启动|
+详见`创建产品模版`
 
 ### 返回:
 
@@ -44,6 +44,6 @@ taxonomy:
 
 **Content:** `{ "message" : "Invalid ProductTemplateArgs", "code": "400", "description": "error details"}`
 
-**Code:** `611`
+**Code:** `6101`
 
-**Content**: `{ "message" : "Update Template Error", "code": "611", "description": "error details"}`
+**Content**: `{ "message" : "Update Template Error", "code": "6101", "description": "error details"}`

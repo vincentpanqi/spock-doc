@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-- 需要user权限
+- 需要`user`权限
 
 ### 请求:
 
@@ -18,67 +18,29 @@ taxonomy:
 
 ```
 [
-	{
-		"product_name": "stack-single",
-		"enabled": true,
-		"stack_deps": [
-		[
-			{
-			"stack_name": "stack-1",
-			"internal": false,
-			"services": [
-				{
-				"service_name": "service-1",
-				"image": {
-					"name": "service-1",
-					"tag": "test"
-				},
-				"unit_type": "1U1G",
-				"envs": [{"key":"value"},{"key","value"}],
-				"command": ["ls"],
-				"config_paths": ["/disk1"],
-				"volume_args": [
-					{
-					"unit_type": "SSD1_10G",
-					"mount_path": "/disk1"
-					}
-				],
-				"access_points": [{
-					"type": "domain",
-					"proto": "http",
-					"ap_port": 25000,
-					"backend_port": 25000
-				}],
-				"test": {
-					"command": "",
-					"result_path": ""
-				}
-				}
-			],
-			"init_scripts": [
-				{
-				"service_name": "service-1",
-				"command": "echo"
-				}
-			]
-			}
-		]
-		]
-	}
+  {
+    "product_name": "demo-product",
+    "groups": [
+      [
+        "group-A"
+      ],
+      [
+        "group-B"
+      ]
+    ],
+    "create_time": 1504418005,
+    "update_time": 1504429476,
+    "update_by": "yaoshipu",
+    "enabled": true
+  }
 ]
 ```	
-### 返回参数说明:
+### 参数说明:
 
-|  参数       |   描述                     |
-|------------|----------------------------|
-|product_name|产品名称，全局唯一             |
-|enabled     |是否对外启用模版               |
-|stack_deps  |详见"创建服务组模版"参数        |
-|init_scripts|初始化脚本，服务创建成功后执行   |
-
+详见`创建产品模版`
 
 ### 错误信息:
 
-**Code:** `612`
+**Code:** `6102`
 
-**Content:** `{ "message" : "List Template Error", "code": "612", "description": "error details"}`
+**Content:** `{ "message" : "List Template Error", "code": "6102", "description": "error details"}`

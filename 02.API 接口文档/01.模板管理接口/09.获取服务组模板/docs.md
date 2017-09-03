@@ -7,12 +7,11 @@ taxonomy:
 
 #### 注意事项
 
-- 模版分成两类部署服务模版和测试模版
-- test字段是测试服务专属字段，部署服务不需要
+- 需要`user`权限
 
 ### 请求：
 
-    GET /api/templates/stacks/:stackName
+    GET /api/templates/groups/:name
 
 ### 返回：
 
@@ -22,53 +21,30 @@ taxonomy:
 
 ```
 {
-	"stack_name": "stack-1",
-	"internal": false,
-	"services": [
-		{
-		"service_name": "service-1",
-		"image": {
-			"name": "service-1",
-			"tag": "test"
-		},
-		"unit_type": "1U1G",
-		"command": [
-			"ls"
-		],
-		"config_paths": [
-			"/disk1"
-		],
-		"volume_args": [
-			{
-			"unit_type": "SSD1_10G",
-			"mount_path": "/disk1"
-			}
-		],
-		"access_points": [{
-			"type": "domain",
-			"proto": "http",
-			"ap_port": 25000,
-			"backend_port": 25000
-		}],
-		"test": {
-			"command": "",
-			"result_path": ""
-		}
-		}
-	],
-	"init_scripts": [
-		{
-		"service_name": "service-1",
-		"command": "echo"
-		}
-	]
+  "group_name": "group-A",
+  "create_time": 1504422408,
+  "update_time": 1504422466,
+  "update_by": "yaoshipu",
+  "services": [
+    [
+      "service-1",
+      "service-2"
+    ],
+    [
+      "service-3"
+    ]
+  ]
 }
 ```
 
+### 返回参数说明
+
+详见`创建服务组模版`
+
 ### 错误信息:
 
-**Code:** `613`
+**Code:** `6103`
 
-**Content:** `{ "message" : "Get Template Error", "code": "613", "description": "error details"}`
+**Content:** `{ "message" : "Get Template Error", "code": "6103", "description": "error details"}`
 
 

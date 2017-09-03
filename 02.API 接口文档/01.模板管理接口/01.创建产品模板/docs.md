@@ -5,9 +5,10 @@ taxonomy:
 ---
 
 #### 注意事项
-- 需要admin权限
-- 产品模板依赖次序在`stack_deps`里描述
-- 产品模板依赖服务组需要调用创建服务组模板预先创建
+
+- 需要`admin`权限
+- 产品模板依赖次序在`groups`里描述
+- 产品模板依赖服务组,需要调用`创建服务组模板`预先创建
 
 ### 请求:
 
@@ -21,18 +22,22 @@ taxonomy:
 
 ```
 {
-	"product_name": "kodo-single",
-	"enabled": true,
-	"stack_deps": [["mongo","mysql"],["kodo"]]
+  "product_name": "product-X",
+  "groups": [
+    ["group-A", "group-B"],
+	["group-C", "group-D"]
+  ],
+  "enabled": true
 }
+
 ```	
 ### 参数说明:
 
-|  参数      |   描述                     |
-|------------|----------------------------|
-|product_name|产品名称，全局唯一             |
-|enabled     |是否对外启用模版               |
-|stack_deps  |产品依赖服务组，服务组按配置的先后顺序启动|
+| 参数 | 描述 |
+|-----|------|
+| product_name | 产品名称，全局唯一 |
+| groups | 产品依赖服务组，服务组按配置的先后顺序启动 |
+| enabled | 是否启用模版, 暂时没有使用 |
 
 ### 返回:
 
@@ -44,7 +49,7 @@ taxonomy:
 
 **Content:** `{ "message" : "Invalid ProductTemplateArgs", "code": "400", "description": "error details"}`
 
-**Code:** `610`
+**Code:** `6100`
 
-**Content:** `{ "message" : "Create Template Error", "code": "610", "description": "error details"}`
+**Content:** `{ "message" : "Create Template Error", "code": "6100", "description": "error details"}`
 

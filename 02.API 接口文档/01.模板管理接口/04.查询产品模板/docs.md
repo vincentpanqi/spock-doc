@@ -4,12 +4,13 @@ taxonomy:
     category: docs
 ---
 
+#### 注意事项
 
-- 需要user权限
+- 需要`user`权限
 
 ### 请求:
 
-    GET /api/templates/products/:productName
+    GET /api/templates/products/:name
 
 ### 返回:
 
@@ -19,59 +20,27 @@ taxonomy:
 
 ```
 {
-    "product_name": "stack-single",
-    "enabled": true,
-    "stack_deps": [
-        [
-        {
-            "stack_name": "stack-1",
-            "internal": false,
-            "services": [
-            {
-                "service_name": "service-1",
-                "image": {
-                "name": "service-1",
-                "tag": "test"
-                },
-                "unit_type": "1U1G",
-                "envs": [{"key":"value"},{"key":"value"}],
-                "command": ["ls"],
-                "config_paths": ["/disk1"],
-                "volume_args": [
-                {
-                    "unit_type": "SSD1_10G",
-                    "mount_path": "/disk1"
-                }
-                ],
-                "access_points": [{
-                    "type": "domain",
-                    "proto": "http",
-                    "ap_port": 25000,
-                    "backend_port": 25000
-                }],
-                "test": {
-                "command": "",
-                "result_path": ""
-                }
-            }
-            ],
-            "init_scripts": [
-            {
-                "service_name": "service-1",
-                "command": "urlencode"
-            }
-            ]
-        }
-        ]
+  "product_name": "demo-product",
+  "groups": [
+    [
+      "group-A"
+    ],
+    [
+      "group-B"
     ]
+  ],
+  "create_time": 1504418005,
+  "update_time": 1504429476,
+  "update_by": "yaoshipu",
+  "enabled": true
 }
 ```
-### 返回参数:
+### 参数说明:
 
-详见“列出产品模版”
+详见`创建产品模版`
 
 ### 错误信息:
 
-**Code:** `613`
+**Code:** `6103`
 
-**Content:** `{ "message" : "Get Template Error", "code": "613", "description": "error details"}`
+**Content:** `{ "message" : "Get Template Error", "code": "6103", "description": "error details"}`
