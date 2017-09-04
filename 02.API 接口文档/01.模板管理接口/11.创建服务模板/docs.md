@@ -18,8 +18,12 @@ taxonomy:
 
 ```
 {
-  "service_name": "service-1",
+  "service_name": "demo",
   "yaml": "yaml files",
+  "image": {
+    "name": "demo",
+    "tag": "1.0"
+  },
   "test": {
     "command": "demo command",
     "result_path": "/test/result/path"
