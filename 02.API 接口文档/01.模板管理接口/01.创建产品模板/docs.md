@@ -24,12 +24,10 @@ taxonomy:
 {
   "product_name": "product-X",
   "groups": [
-    ["group-A", "group-B"],
-	["group-C", "group-D"]
+    "group-A", "group-B"
   ],
   "enabled": true
 }
-
 ```	
 ### 参数说明:
 

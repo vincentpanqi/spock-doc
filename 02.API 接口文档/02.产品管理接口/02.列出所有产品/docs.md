@@ -22,11 +22,7 @@ taxonomy:
 [
   {
     "product_name": "portal-v4",
-    "groups": [
-      [
-        "portal-v4", "kodo"
-      ]
-    ],
+    "groups": ["portal-v4", "kodo"],
     "status": "Running"
   }
 ]

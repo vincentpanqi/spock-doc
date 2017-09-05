@@ -20,14 +20,7 @@ taxonomy:
 [
   {
     "product_name": "demo-product",
-    "groups": [
-      [
-        "group-A"
-      ],
-      [
-        "group-B"
-      ]
-    ],
+    "groups": [ "group-A", "group-B"],
     "create_time": 1504418005,
     "update_time": 1504429476,
     "update_by": "yaoshipu",

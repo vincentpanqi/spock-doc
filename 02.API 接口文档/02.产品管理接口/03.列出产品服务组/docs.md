@@ -22,7 +22,6 @@ taxonomy:
 **Content:**
 
 ```
-[
   [
     {
       "group_name": "portal-v4",
@@ -43,7 +42,6 @@ taxonomy:
       "status": "Running"
     }
   ]
-]
 ```
 
 ### 参数说明:

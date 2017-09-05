@@ -24,8 +24,7 @@ taxonomy:
 {
   "product_name": "product-X",
   "groups": [
-    ["group-A", "group-B"],
-	["group-C", "group-D"]
+    "group-C", "group-D"
   ],
   "enabled": true
 }
