@@ -14,6 +14,6 @@ taxonomy:
 
 ### 错误信息:
 
-**Code:** `624`
+**Code:** `6203`
 
-**Content:** `{ "message" : "Delete Product Error", "code": "624"}`
+**Content:** `{ "message" : "Delete Product Error", "code": "6203"}`

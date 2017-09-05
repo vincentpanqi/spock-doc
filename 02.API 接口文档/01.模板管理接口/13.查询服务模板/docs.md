@@ -26,10 +26,7 @@ taxonomy:
   "hash256": "67d4ec273289fd84a61055ef64991d3cb455711ad2605f6246e8cac03c12b4b4",
   "create_time": 1504490268,
   "create_by": "yaoshipu",
-  "image": {
-    "name": "demo",
-    "tag": "1.0"
-  },
+  "image_tag": "1.0",
   "test": {
     "command": "demo command",
     "result_path": "/test/result/path"
