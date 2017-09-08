@@ -6,7 +6,7 @@ taxonomy:
 
 ### 请求：
 
-    POST /api/stacks/:stackName/services/:serviceName/restart
+    POST /api/products/:productName/groups/:groupName/services/:serviceName/restart
 
 ### 返回：
 

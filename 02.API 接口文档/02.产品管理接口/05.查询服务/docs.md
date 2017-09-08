@@ -1,5 +1,5 @@
 ---
-title: 列出所有服务组信息
+title: 查询服务
 taxonomy:
     category: docs
 ---

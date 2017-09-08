@@ -1,12 +1,12 @@
 ---
-title: 更新服务
+title: 更新服务镜像
 taxonomy:
     category: docs
 ---
 
 ### 请求：
 
-    PUT /api/stacks/:stackName/services/:serviceName
+    POST /api/products/:productName/groups/:groupName/services/:serviceName/image
 
 ### 请求参数：
 
@@ -16,11 +16,7 @@ taxonomy:
 
 ```
 {
-	"image": {
-		"name": "new_name",
-		"tag": "new_tag"
-	},
-	"unit_type": "2U4G"
+  "tag": "new_tag"
 }
 ```
 
@@ -28,8 +24,7 @@ taxonomy:
 
 |参数|描述|
 |---|---|
-|image|服务镜像|
-|unit_type|服务容器的规格，详见“容器规格”|
+|tag|服务镜像Tag|
 
 ### 返回:
 
@@ -39,7 +34,7 @@ taxonomy:
 
 **Code:** `400`
 
-**Content:** `{ "message" : "Invalid UpdateServiceArgs", "code": "400"}`
+**Content:** `{ "message" : "invalid UpdateServiceArgs", "code": "400"}`
 
 **Code:** `631`
 

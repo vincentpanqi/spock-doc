@@ -1,5 +1,5 @@
 ---
-title: 列出所有产品名称
+title: 列出产品
 taxonomy:
     category: docs
 ---

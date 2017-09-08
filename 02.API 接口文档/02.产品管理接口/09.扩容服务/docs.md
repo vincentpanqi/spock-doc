@@ -1,12 +1,12 @@
 ---
-title: 停止服务
+title: 扩容服务
 taxonomy:
     category: docs
 ---
 
 ### 请求：
 
-    POST /api/stacks/:stackName/services/:serviceName/stop
+    POST /api/products/:productName/groups/:groupName/services/:serviceName/scale/:number
 
 ### 返回：
 
