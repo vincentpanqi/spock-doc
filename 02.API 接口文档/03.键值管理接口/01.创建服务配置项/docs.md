@@ -6,8 +6,7 @@ taxonomy:
 
 ### 请求：
 
-    POST /api/configs
-
+    POST /api/keystore
 
 ### 请求参数：
 	
@@ -17,18 +16,20 @@ taxonomy:
 
 ```
 {
-    "vars": {
-        "ka": "va-spockadmin", 
-        "kb": "vb-spockadmin"
-    }
+    "namespace": "shared-namespace",
+    "key": "ak",
+    "value": "value"
 }
 ```
 
-### 请求参数说明：
+### 参数说明：
 
 |参数|描述|
 |---|---|
-|vars|键值对|
+|namespace|用户名称, 普通用户为自身LDAP用户名, 管理员用户为任意LDAP用户名或者`shared-namespace`|
+|key|键|
+|value|值|
+|shared-namespace|共享参数|
 
 ### 返回：
 
@@ -38,4 +39,4 @@ taxonomy:
 
 **Code:** `643`
 
-**Content:** `{ "message" : "Create Config Service Specs Error", "code": "643"}`
+**Content:** `{ "message" : "create keystore error", "code": "643"}`

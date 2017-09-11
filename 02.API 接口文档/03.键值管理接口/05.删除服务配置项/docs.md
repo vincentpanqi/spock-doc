@@ -11,7 +11,7 @@ taxonomy:
 
 ### 请求：
 
-    POST /api/configs/delete
+    DELETE /api/keystore/key
 
 ### 请求参数：
 	
