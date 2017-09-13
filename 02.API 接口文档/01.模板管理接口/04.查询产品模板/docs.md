@@ -20,10 +20,31 @@ taxonomy:
 
 ```
 {
-  "product_name": "demo-product",
-  "groups": ["group-A", "group-B"],
-  "create_time": 1504418005,
-  "update_time": 1504429476,
+  "product_name": "portal-v4",
+  "groups": [
+    {
+      "group_name": "portal-v4",
+      "create_time": 1504670402,
+      "update_time": 1504689324,
+      "update_by": "yaoshipu",
+      "services": [
+        [
+          "certificate",
+          "fe-financial",
+          "fusion",
+          "index",
+          "jedi",
+          "kirk",
+          "kodo",
+          "kylin",
+          "pili",
+          "vance"
+        ]
+      ]
+    }
+  ],
+  "create_time": 1504683822,
+  "update_time": 1504683822,
   "update_by": "yaoshipu",
   "enabled": true
 }
