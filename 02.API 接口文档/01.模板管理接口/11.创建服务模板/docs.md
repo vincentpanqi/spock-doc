@@ -36,6 +36,7 @@ taxonomy:
 | yaml | 服务kube配置文件 |
 | test | 配置测试服务额外字段 |
 
+
 ```
 apiVersion: extensions/v1beta1
 kind: Ingress
@@ -55,9 +56,7 @@ spec:
           serviceName: portal-v4-fe-financial
           servicePort: 80
         path: /
-```
-
-```
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -77,9 +76,7 @@ spec:
     s-group: {{.Group}}
     s-service: {{.Service}}
   clusterIP: None
-```
-
-```
+---
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
