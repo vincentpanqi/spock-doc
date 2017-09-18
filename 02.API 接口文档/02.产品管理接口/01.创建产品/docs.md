@@ -31,11 +31,11 @@ taxonomy:
         [
           {
             "service_name": "index",
-            "image_tag": "latest"
+            "image": "index.qiniu.com/spocktest/hello:1.0",
           },
           {
             "service_name": "certificate",
-            "image_tag": "latest"
+            "image": "index.qiniu.com/spocktest/hello:1.0",
           }
         ]
       ]

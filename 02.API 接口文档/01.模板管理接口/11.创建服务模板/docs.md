@@ -20,7 +20,7 @@ taxonomy:
 {
   "service_name": "demo",
   "yaml": "yaml files",
-  "image_tag": "1.0",
+  "image": "index.qiniu.com/spocktest/hello:1.0",
   "test": {
     "command": "demo command",
     "result_path": "/test/result/path"
