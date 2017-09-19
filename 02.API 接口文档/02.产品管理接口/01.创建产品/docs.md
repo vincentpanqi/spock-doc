@@ -31,13 +31,15 @@ taxonomy:
         [
           {
             "service_name": "mongo3.2",
-            "image": "mongo:3.2"
+            "image": "mongo:3.2",
+            "revision": 1
           }
         ],
 	    [
           {
             "service_name": "mongo-init-job",
-            "image": "index.qiniu.com/spocktest/mongo-client"
+            "image": "index.qiniu.com/spocktest/mongo-client",
+            "revision": 2
           }
         ]
       ]
@@ -52,7 +54,8 @@ taxonomy:
 |---|---|
 |product_name|产品名称，全局唯一|
 |visibility| 授权他人部署， 参数为 private, public, 默认为 private
-|groups|产品依赖服务组，服务组按配置的先后顺序启动，具体参数详见“创建服务组模版”|
+|groups|产品依赖服务组，服务组按配置的先后顺序启动，具体参数详见`创建服务组模版`|
+|revision|版本号|
 
 ### 返回:
 
