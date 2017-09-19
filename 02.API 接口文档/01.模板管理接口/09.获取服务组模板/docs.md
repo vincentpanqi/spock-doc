@@ -21,17 +21,14 @@ taxonomy:
 
 ```
 {
-  "group_name": "group-A",
-  "create_time": 1504422408,
-  "update_time": 1504422466,
-  "update_by": "yaoshipu",
+  "group_name": "mongo-rs",
+  "revision": 3,
   "services": [
     [
-      "service-1",
-      "service-2"
+      "mongo3.2"
     ],
     [
-      "service-3"
+      "mongo-init-job"
     ]
   ]
 }

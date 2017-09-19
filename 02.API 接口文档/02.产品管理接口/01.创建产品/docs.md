@@ -22,20 +22,22 @@ taxonomy:
 
 ```
 {
-  "product_name": "portal-v4",
+  "product_name": "mongo-rs",
   "visibility": "public",
   "groups": [
     {
-      "group_name": "portal-v4",
+      "group_name": "mongo-rs",
       "services": [
         [
           {
-            "service_name": "index",
-            "image": "index.qiniu.com/spocktest/hello:1.0",
-          },
+            "service_name": "mongo3.2",
+            "image": "mongo:3.2"
+          }
+        ],
+	    [
           {
-            "service_name": "certificate",
-            "image": "index.qiniu.com/spocktest/hello:1.0",
+            "service_name": "mongo-init-job",
+            "image": "index.qiniu.com/spocktest/mongo-client"
           }
         ]
       ]

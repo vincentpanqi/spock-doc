@@ -20,31 +20,49 @@ taxonomy:
 
 ```
 {
-  "product_name": "portal-v4",
+  "product_name": "mongo-rs",
+  "revision": 3,
   "groups": [
     {
-      "group_name": "portal-v4",
-      "create_time": 1504670402,
-      "update_time": 1504689324,
+      "group_name": "mongo-rs",
+      "revision": 3,
+      "create_time": 1505790878,
+      "update_time": 1505803134,
       "update_by": "yaoshipu",
       "services": [
         [
-          "certificate",
-          "fe-financial",
-          "fusion",
-          "index",
-          "jedi",
-          "kirk",
-          "kodo",
-          "kylin",
-          "pili",
-          "vance"
+          {
+            "service_name": "mongo3.2",
+            "revision": 7,
+            "create_time": 1505803605,
+            "create_by": "yaoshipu",
+            "containers": [
+              {
+                "name": "mongo",
+                "image": "mongo:3.2"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "service_name": "mongo-init-job",
+            "revision": 7,
+            "create_time": 1505805892,
+            "create_by": "yaoshipu",
+            "containers": [
+              {
+                "name": "mongo-client",
+                "image": "index.qiniu.com/spock/mongo-client"
+              }
+            ]
+          }
         ]
       ]
     }
   ],
-  "create_time": 1504683822,
-  "update_time": 1504683822,
+  "create_time": 1505790914,
+  "update_time": 1505791016,
   "update_by": "yaoshipu",
   "enabled": true
 }

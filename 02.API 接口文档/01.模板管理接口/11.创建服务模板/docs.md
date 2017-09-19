@@ -20,7 +20,6 @@ taxonomy:
 {
   "service_name": "demo",
   "yaml": "yaml files",
-  "image": "index.qiniu.com/spocktest/hello:1.0",
   "test": {
     "command": "demo command",
     "result_path": "/test/result/path"
@@ -103,7 +102,7 @@ spec:
       imagePullSecrets:
         - name: qn-registry-secret
       containers:
-        - image: {{.RegistryHost}}/{{.Owner}}/{{.Service}}:{{.ImageTag}}
+        - image: index.qiniu.com/spocket/test:latest
           imagePullPolicy: Always
           name: fe-financial
           ports:
