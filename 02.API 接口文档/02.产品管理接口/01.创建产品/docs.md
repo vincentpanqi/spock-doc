@@ -27,18 +27,29 @@ taxonomy:
   "groups": [
     {
       "group_name": "mongo-rs",
+      "revision": 1,
       "services": [
         [
           {
             "service_name": "mongo3.2",
-            "image": "mongo:3.2",
+            "containers": [
+              {
+                "name": "mongo",
+                "image": "mongo:3.2"
+              }
+            ],
             "revision": 1
           }
         ],
-	    [
+        [
           {
             "service_name": "mongo-init-job",
-            "image": "index.qiniu.com/spocktest/mongo-client",
+            "containers": [
+              {
+                "name": "mongo-client",
+                "image": "index.qiniu.com/spocktest/mongo-client"
+              }
+            ],
             "revision": 2
           }
         ]
