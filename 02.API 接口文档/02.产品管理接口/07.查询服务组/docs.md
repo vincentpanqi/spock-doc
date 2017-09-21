@@ -17,31 +17,40 @@ taxonomy:
 ```
 [
   {
-    "name": "mongo-0",
-    "ready": "1/1",
-    "status": "Running",
-    "restarts": 0,
-    "age": "1h",
-    "ip": "172.20.177.139",
-    "node": "cs58"
+    "service_name": "mongo-init-job",
+    "pods": []
   },
   {
-    "name": "mongo-1",
-    "ready": "1/1",
-    "status": "Running",
-    "restarts": 0,
-    "age": "1h",
-    "ip": "172.20.229.139",
-    "node": "cs23"
-  },
-  {
-    "name": "mongo-2",
-    "ready": "1/1",
-    "status": "Running",
-    "restarts": 0,
-    "age": "1h",
-    "ip": "172.20.66.159",
-    "node": "cs24"
+    "service_name": "mongo3.2",
+    "pods": [
+      {
+        "name": "mongo-0",
+        "ready": "1/1",
+        "status": "Running",
+        "restarts": 0,
+        "age": "23h",
+        "ip": "172.20.177.132",
+        "node": "cs58"
+      },
+      {
+        "name": "mongo-1",
+        "ready": "1/1",
+        "status": "Running",
+        "restarts": 1,
+        "age": "23h",
+        "ip": "172.20.229.185",
+        "node": "cs23"
+      },
+      {
+        "name": "mongo-2",
+        "ready": "1/1",
+        "status": "Running",
+        "restarts": 0,
+        "age": "23h",
+        "ip": "172.20.66.161",
+        "node": "cs24"
+      }
+    ]
   }
 ]
 ```
