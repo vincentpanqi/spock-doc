@@ -17,14 +17,31 @@ taxonomy:
 ```
 [
   {
-    "name": "portal-v4-certificate-3015503407",
-    "desired": 1,
-    "current": 1,
-    "ready": 1,
-    "age": "5d",
-    "containers": "certificate",
-    "images": "index-dev.qiniu.io/spock/certificate:latest",
-    "selector": "pod-template-hash=3015503407,product=portal-v4,service=certificate,svc-group=portal-v4"
+    "name": "mongo-0",
+    "ready": "1/1",
+    "status": "Running",
+    "restarts": 0,
+    "age": "1h",
+    "ip": "172.20.177.139",
+    "node": "cs58"
+  },
+  {
+    "name": "mongo-1",
+    "ready": "1/1",
+    "status": "Running",
+    "restarts": 0,
+    "age": "1h",
+    "ip": "172.20.229.139",
+    "node": "cs23"
+  },
+  {
+    "name": "mongo-2",
+    "ready": "1/1",
+    "status": "Running",
+    "restarts": 0,
+    "age": "1h",
+    "ip": "172.20.66.159",
+    "node": "cs24"
   }
 ]
 ```
@@ -32,15 +49,12 @@ taxonomy:
 ### 参数说明:
 
 - `name` 服务副本名称
-- `desired` 期望副本数量
-- `current` 实际运行数量
-- `ready` 
+- `ready` 期望副本数量/实际运行数量
 - `age` 运行时长
 - `images` 镜像名称
-- `selector` 查询条件
 
 ### 错误信息:
 
 **Code:** `622`
 
-**Content:** `{ "message" : "List Products Error", "code": "622"}`
+**Content:** `{ "message" : "list product group error", "code": "622"}`
