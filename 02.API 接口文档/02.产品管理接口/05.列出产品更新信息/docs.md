@@ -1,5 +1,5 @@
 ---
-title: 创建产品
+title: 列出产品更新信息
 taxonomy:
     category: docs
 ---
