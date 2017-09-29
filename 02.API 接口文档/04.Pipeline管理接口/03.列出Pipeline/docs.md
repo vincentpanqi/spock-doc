@@ -1,5 +1,5 @@
 ---
-title: 列出Pipeline
+title: 4.3 列出Pipeline
 taxonomy:
     category: docs
 ---
@@ -7,6 +7,7 @@ taxonomy:
 ### 请求：
 
     GET /api/pipelines
+    GET /api/v2/pipelines
 
 ### 返回：
 
@@ -15,6 +16,8 @@ taxonomy:
 **Content:** 
 
 ```
+Pipeline V1
+
 [
     {
         "pipeline_name": "pipeline-1",
@@ -36,7 +39,66 @@ taxonomy:
         "enabled": true
     }
 ]
-```	
+```
+
+```
+Pipeline V2
+
+[
+  {
+    "name": "test-pipeline",
+    "description": "demo desc",
+    "update_by": "",
+    "update_time": 1506652535,
+    "enabled": true,
+    "schedule": "*/10 * * * * *",
+    "sub_tasks": [
+      {
+        "branch": "dev",
+        "commit_id": "456",
+        "commit_message": "commit message",
+        "image": "image full name",
+        "package_file": "build service kodo package file",
+        "pull_request_id": 1234,
+        "repo_name": "aslan-platform",
+        "repo_owner": "qbox",
+        "timeout": 7200,
+        "type": "build"
+      },
+      {
+        "container_name": "spock-backend",
+        "group_name": "spock-kube",
+        "image": "same as previous build task value",
+        "package_file": "same as previous build task value",
+        "product_name": "spock-kube",
+        "service_name": "spock-backend",
+        "timeout": 500,
+        "type": "deploy"
+      },
+      {
+        "command": "command to run test",
+        "container_name": "spock-backend-test",
+        "group_name": "spock-test",
+        "product_name": "spock-kube",
+        "result_path": "test result path",
+        "service_name": "spock-backend-test",
+        "threshold": 90,
+        "timeout": 3600,
+        "type": "testing"
+      },
+      {
+        "dist_host": "jumpbox",
+        "timeout": 600,
+        "type": "distribute"
+      },
+      {
+        "timeout": 600,
+        "type": "jira"
+      }
+    ]
+  }
+]
+```
 
 ### 返回参数说明：
 
@@ -59,6 +121,6 @@ taxonomy:
 
 ### 错误信息：
 
-**Code:** `681`
+**Code:** `6802`
 
-**Content:** `{ "message" : "List Pipelines Error", "code": "681", "description": "error details"}`
+**Content:** `{ "message" : "list pipeline error", "code": "6802", "description": "error details"}`
