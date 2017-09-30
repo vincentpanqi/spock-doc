@@ -1,9 +1,8 @@
 ---
-title: 删除服务配置项
+title: 3.4 删除服务配置项
 taxonomy:
     category: docs
 ---
-
 
 #### 注意事项
 
@@ -11,20 +10,18 @@ taxonomy:
 
 ### 请求：
 
-    DELETE /api/keystore/key
+    DELETE /api/keystore/:key?namespace=:namespace
 
 ### 请求参数：
 	
 **Type:** `application/json`
 
-**Content:**
+### 参数说明：
 
-```
-{
-    "vars": [ "ka", "kb"]
-}
-
-```
+|参数|描述|
+|---|---|
+|namespace|用户名称, 普通用户为自身LDAP用户名, 管理员用户为任意LDAP用户名或者`shared-namespace`|
+|key|需要删除的键|
 
 ### 返回：
 
