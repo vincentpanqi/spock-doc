@@ -7,7 +7,8 @@ RUN docsify init ./docs
 
 ADD docs/ ./docs
 
-RUN docsify serve ./docs -p 80
+ADD init.sh /
 
+CMD ["sh", "init.sh"]
 
 EXPOSE 80
