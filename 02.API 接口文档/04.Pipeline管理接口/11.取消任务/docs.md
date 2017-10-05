@@ -12,6 +12,8 @@ taxonomy:
 
     DELETE /api/tasks/id/:id/pipeline/:name
 
+    POST /api/v2/tasks/id/:id/pipelines/:name/cancel
+
 ### 请求参数说明：
 
 - id：运行任务的ID
