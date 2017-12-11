@@ -1,25 +1,17 @@
-- 模板管理
-  - [创建产品模板](product-template/create.md)
-  - [删除产品模板](product-template/delete.md)
-  - [更新产品模板](product-template/update.md)
-  - [列出产品模板](product-template/list.md)
-  - [查询产品模板](product-template/query.md)
-  - [创建服务组模板](service-group-template/create.md)
-  - [删除服务组模板](service-group-template/delete.md)
-  - [更新服务组模板](service-group-template/update.md)
-  - [列出服务组模板](service-group-template/list.md)
-  - [获取服务组模板](service-group-template/query.md)
-  - [创建服务模板](service-template/create.md)
-  - [列出服务模板](service-template/list.md)
-  - [查询服务模板](service-template/query.md)
-  - [删除服务模板](service-template/delete.md)
-
-- 产品管理
-  - [创建产品](product/create.md)
-  - [删除产品](product/delete.md)
-  - [更新产品](product/update.md)
-  - [列出所有产品名称](product/list-product-name.md)
-  - [列出产品更新信息](product/list-update-info.md)
-
-- 键值管理
-- [Changelog](changelog.md)
+- 入门
+  - [Spock 介绍](入门/spock介绍.md)
+  - [接入准备](入门/接入准备.md)
+- 快速开始
+- Spock 使用
+  - 编译模块
+  - 部署模块
+  - 测试模块
+  - 流水线
+- 产品线
+  - Portalv4
+  - Portal.io
+  - Kodo
+- 遇到问题
+- 反馈
+- Spock-CLI
+- Change log
