@@ -1,6 +1,6 @@
-![logo](_media/icon.svg)
+![logo](_media/s.png)
 
-# Spock Doc <small>1.0.0</small>
+# Spock Doc <small>1.0.5</small>
 
 [GitHub](https://github.com/leozhang2018/spock-doc)
-[Get Started](#spock-doc)
+[立即开始](#spock-doc)

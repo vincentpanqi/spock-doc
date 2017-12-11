@@ -10,11 +10,13 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" title="vue">
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/dark.css" title="dark" disabled>
-    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/buble.css" title="buble" disabled>
-    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/pure.css" title="pure" disabled>
     <style>
         nav.app-nav li ul {
             min-width: 100px;
+        }
+        .cover .cover-main  p img{
+          width: 128px;
+          height: 128px;
         }
     </style>
 </head>
@@ -52,7 +54,7 @@
         plugins: [
             function(hook, vm) {
                 hook.beforeEach(function(html) {
-                    var url = 'https://github.com/leozhang2018/spock-doc/blob/master/docs/' + vm.route.file
+                    var url = 'https://github.com/leozhang2018/spock-doc/blob/develop/docs/' + vm.route.file
                     var editHtml = '[:memo: Edit Document](' + url + ')\n'
 
                     return editHtml +
