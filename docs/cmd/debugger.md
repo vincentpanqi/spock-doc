@@ -1,7 +1,7 @@
 
 debugger 是 spock 封装 Kubernetes kubectl，可以用它来登入容器，进行操作，即将下线，推荐使用[kubectl](命令行工具/kubectl安装与配置.md)
 
-##### 安装 debugger
+## 安装 debugger
 
 > macOS
 
