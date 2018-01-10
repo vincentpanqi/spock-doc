@@ -5,14 +5,9 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: spock-doc
-  namespace: {{.Namespace}}
-  labels:
-    s-product: {{.Product}}
-    s-group: {{.Group}}
-    s-service: {{.Service}}
 spec:
   rules:
-  - host: {{.Service}}-{{.Namespace}}.ke-cs.dev.qiniu.io
+  - host: spock-doc.cs-spock.cloudappl.com
     http:
       paths:
       - backend:
@@ -24,48 +19,24 @@ apiVersion: v1
 kind: Service
 metadata:
   name: spock-doc
-  namespace: {{.Namespace}}
-  labels:
-    s-product: {{.Product}}
-    s-group: {{.Group}}
-    s-service: {{.Service}}
 spec:
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
-  selector:
-    s-product: {{.Product}}
-    s-group: {{.Group}}
-    s-service: {{.Service}}
 ---
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: spock-doc
-  namespace: {{.Namespace}}
-  labels:
-    s-product: {{.Product}}
-    s-group: {{.Group}}
-    s-service: {{.Service}}
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      s-product: {{.Product}}
-      s-group: {{.Group}}
-      s-service: {{.Service}}
   template:
-    metadata:
-      labels:
-        s-product: {{.Product}}
-        s-group: {{.Group}}
-        s-service: {{.Service}}
     spec:
       imagePullSecrets:
         - name: qn-registry-secret
       containers:
-        - image: "index.qiniu.com/spocktest/spock-doc:latest"
+        - image: index.qiniu.com/spocktest/spock-doc:1.0.8
           imagePullPolicy: Always
           name: spock-doc
           ports:
