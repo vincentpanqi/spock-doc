@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spock Doc</title>
+    <link rel="icon" href="_media/favicon.ico">
+    <meta name="keywords" content="spock-doc">
+    <meta name="description" content="spock doc">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="http://p1z8ycrpx.bkt.clouddn.com/vue-theme.css" title="vue">
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/dark.css" title="dark" disabled>
+    <style>
+        nav.app-nav li ul {
+            min-width: 100px;
+        }
+        .cover .cover-main  p img{
+          width: 128px;
+          height: 128px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">Loading ...</div>
+</body>
+<script>
+    window.$docsify = {
+        alias: {
+            '.*?/changelog': 'https://raw.githubusercontent.com/QingWei-Li/docsify/master/CHANGELOG',
+            '/.*/_navbar.md': '/_navbar.md'
+        },
+        auto2top: true,
+        coverpage: true,
+        executeScript: true,
+        loadSidebar: true,
+        loadNavbar: true,
+        mergeNavbar: true,
+        maxLevel: 4,
+        subMaxLevel: 2,
+        name: 'spock doc',
+        search: {
+            noData: {
+                '/zh-cn/': '没有结果!',
+                '/': 'No results!'
+            },
+            paths: 'auto',
+            placeholder: {
+                '/zh-cn/': '搜索',
+                '/': 'Search'
+            }
+        },
+        formatUpdated: '{MM}/{DD} {HH}:{mm}',
+        plugins: [
+            // function(hook, vm) {
+            //     hook.beforeEach(function(html) {
+            //         var url = 'https://github.com/leozhang2018/spock-doc/blob/develop/docs/' + vm.route.file
+            //         var editHtml = '[:memo: Edit Document](' + url + ')\n'
+
+            //         return editHtml +
+            //             html +
+            //             '\n----\n' +
+            //             'Last modified {docsify-updated} ' +
+            //             editHtml
+            //     })
+            // }
+        ]
+    }
+</script>
+<script src="http://p1z8ycrpx.bkt.clouddn.com/docsify.min.js"></script>
+<script src="http://p1z8ycrpx.bkt.clouddn.com/search.min.js"></script>
+<script src="http://p1z8ycrpx.bkt.clouddn.com/prism-bash.min.js"></script>
+<script src="http://p1z8ycrpx.bkt.clouddn.com/prism-markdown.min.js"></script>
+<script src="http://p1z8ycrpx.bkt.clouddn.com/prism-nginx.min.js"></script>
+
+</html>

@@ -1,0 +1,44 @@
+#------------------------------------------------------------
+# spock-doc
+#------------------------------------------------------------
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: spock-doc
+spec:
+  rules:
+  - host: spock-doc.cs-spock.cloudappl.com
+    http:
+      paths:
+      - backend:
+          serviceName: spock-doc
+          servicePort: 80
+        path: /
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: spock-doc
+spec:
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: spock-doc
+spec:
+  replicas: 1
+  template:
+    spec:
+      imagePullSecrets:
+        - name: qn-registry-secret
+      containers:
+        - image: index.qiniu.com/spocktest/spock-doc:1.0.8
+          imagePullPolicy: Always
+          name: spock-doc
+          ports:
+            - protocol: TCP
+              containerPort: 80
