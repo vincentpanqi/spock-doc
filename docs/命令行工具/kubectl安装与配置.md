@@ -44,9 +44,9 @@ chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 ```
 
-##### 登陆 Spock 获取自己的配置文件
+##### 登录 Spock 获取自己的配置文件
 
-登陆 [Spock](http://spock.qiniu.io)，点击`个人设置` -> `私钥下载` 下载自己的私钥配置。
+登录 [Spock](http://spock.qiniu.io)，点击`个人设置` -> `私钥下载` 下载自己的私钥配置。
 
 ![个人中心](_images/spock-profile.png "个人中心")
 
