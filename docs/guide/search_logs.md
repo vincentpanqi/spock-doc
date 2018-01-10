@@ -10,7 +10,7 @@
 
 </br>
 
-# 页面查询
+## 页面查询
 
 首先，确认服务是否处于`running`状态。如果服务容器非正常`running`，那么可进入服务详情页面查看错误信息，如下图所示。
 
@@ -23,7 +23,7 @@
 
 </br>
 
-# debugger工具
+## debugger工具
 
 [安装方式](cmd/debugger.md)
 
@@ -45,7 +45,7 @@ debugger exec -it --pod portal-v4-atboard-backend-4270770443-x76td bash
 
 </br>
 
-# kubectl工具
+## kubectl工具
 
 [安装方式](cmd/kubectl.md)
 

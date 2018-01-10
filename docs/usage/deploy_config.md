@@ -1,0 +1,3 @@
+# 部署模块
+
+部署在spock上的容器服务，使用的是kirk的kubernetes环境，每个服务需要配置相关的k8s配置yaml
