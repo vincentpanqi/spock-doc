@@ -1,8 +1,6 @@
-### 命令行方式
-通过命令行方式，你可以很方便的对容器进行操作。
 
-#### 使用准备
 kubectl 是 Kubernetes 自带的客户端，可以用它来直接操作容器
+
 ##### 安装 kubectl
 
 > macOS
@@ -64,7 +62,7 @@ mv ./config /Users/你的用户名/.kube
 
 ![config](_images/kube-config.png "config")
 
-接下来即可使用 `kubectl`
+配置完成后即可使用 `kubectl`
 
 
 kubectl 常用命令可以参考：

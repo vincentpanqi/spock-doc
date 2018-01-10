@@ -15,10 +15,6 @@ npm i docsify-cli -g
 ### Live preview your site
 
 ```bash
-cd docs
-```
-
-```bash
 docsify serve docs
 ```
 

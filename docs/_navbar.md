@@ -1,2 +1,2 @@
-- Translations
-  - [:cn: 中文](/zh-cn/)
+<!-- - Translations
+  - [:cn: 中文](/zh-cn/) -->
