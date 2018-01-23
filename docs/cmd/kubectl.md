@@ -67,3 +67,4 @@ mv ./config /Users/你的用户名/.kube
 
 kubectl 常用命令可以参考：
 [Kubectl command](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
+[Kubectl for Docker Users](https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/)
