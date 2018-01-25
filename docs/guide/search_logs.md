@@ -8,7 +8,9 @@
 
 !>spock提供三种方式，用户可自行选择，对于高级用户，推荐使用kubectl工具
 
-### 页面查询
+</br>
+
+## 页面查询
 
 首先，确认服务是否处于`running`状态。如果服务容器非正常`running`，那么可进入服务详情页面查看错误信息，如下图所示。
 
@@ -19,9 +21,11 @@
 <video id="video" controls="" preload="none" poster="_images/video_poster.png" width="600" >
       <source id="mp4" src="http://p2akugain.bkt.clouddn.com/%E9%A1%B5%E9%9D%A2%E6%9F%A5%E8%AF%A2%E6%97%A5%E5%BF%97.mov?v=afs" type="video/mp4"></video>
 
-### debugger工具
+</br>
 
-[安装方式](命令行工具/debugger安装与配置.md)
+## debugger工具
+
+[安装方式](cmd/debugger.md)
 
 - 登录，目前使用测试环境ldap账号
 
@@ -39,9 +43,11 @@ debugger exec -it --pod portal-v4-atboard-backend-4270770443-x76td bash
 ```
 ![进入容器内部](_images/debugger-exec-pod.png)
 
-### kubectl工具
+</br>
 
-[安装方式](命令行工具/kubectl安装与配置.md)
+## kubectl工具
+
+[安装方式](cmd/kubectl.md)
 
 - 查看服务容器列表
 
@@ -56,9 +62,9 @@ kubectl get po
 
 ```bash
 kubectl logs  <podname>
-#查看历史log，例子：kubectl logs portal-v4-qvm-backend-1884958998-6t8wm
+#查看历史log，例：kubectl logs portal-v4-qvm-backend-1884958998-6t8wm
 kubectl logs -f <podname>
-#类似tail -f，例子：kubectl logs  -f ptfdm-3703976567-8s2j9
+#类似tail -f，例：kubectl logs  -f ptfdm-3703976567-8s2j9
 
 ```
 

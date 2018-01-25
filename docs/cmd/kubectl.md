@@ -1,7 +1,7 @@
 
 kubectl 是 Kubernetes 自带的客户端，可以用它来直接操作容器
 
-##### 安装 kubectl
+## 安装 kubectl
 
 > macOS
 
@@ -44,7 +44,7 @@ chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 ```
 
-##### 登录 Spock 获取自己的配置文件
+## 配置 kubectl
 
 登录 [Spock](http://spock.qiniu.io)，点击`个人设置` -> `私钥下载` 下载自己的私钥配置。
 
@@ -67,3 +67,4 @@ mv ./config /Users/你的用户名/.kube
 
 kubectl 常用命令可以参考：
 [Kubectl command](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
+[Kubectl for Docker Users](https://kubernetes.io/docs/reference/kubectl/docker-cli-to-kubectl/)
